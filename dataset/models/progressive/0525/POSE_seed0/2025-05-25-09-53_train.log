@@ -1,0 +1,1144 @@
+2025-05-25 09:53:36 INFO: model dir: /mnt/workspace/POSE/dataset/models/progressive/0525/POSE_seed0
+2025-05-25 09:53:36 INFO: options: Namespace(config_name='progressive', data='homework', mode='POSE', device='cuda:0', log_name=None, debug=False)
+2025-05-25 09:53:36 INFO: config_params: {'augnet_lr': 0.01, 'batch_size': 8, 'class_num': 15, 'cls_pre': True, 'cluster_method': 'kmeans', 'gamma': 0.9, 'inc': 32, 'init_lr_E': 0.0001, 'input_data': 'dct', 'kernel_size': 3, 'known_sim_limit': 0.95, 'loss': 'Softmax', 'max_epochs': 30, 'metric': 'acc', 'mse_lowbound': 0, 'num_workers': 8, 'resize_size': (128, 128), 'save_interval': 5, 'seed': 0, 'start_cls_pre_epoch': 1, 'step_size': 500, 'temp': 0.1, 'test_interval': 1, 'vis_interval': 500, 'w_close_known': 0.01, 'w_dist_pre': 0.0001}
+2025-05-25 09:53:38 INFO: begin to train!
+2025-05-25 09:56:09 INFO: ----------------------------  testing begin ----------------------------  
+2025-05-25 09:57:24 INFO: closed-set results: {'recalls': array([0.672, 0.834, 0.974, 0.586, 0.857, 1.   , 1.   , 0.27 , 0.929,
+       0.583, 0.379]), 'recall': 0.7349090909090908, 'f1': 0.725068652350631, 'acc': 0.734909090909091}
+2025-05-25 09:57:24 INFO: closed-set confusion matrix: [[ 672    0    2  124  147    0    0    4   25   14   12]
+ [   0  834  154    0    0    1    0    1    4    6    0]
+ [   0   20  974    0    0    0    0    0    1    5    0]
+ [ 303    0    0  586  101    0    0    0    8    1    1]
+ [ 135    0    0    7  857    0    0    0    0    1    0]
+ [   0    0    0    0    0 1000    0    0    0    0    0]
+ [   0    0    0    0    0    0 1000    0    0    0    0]
+ [   1    0    0    0    0    0    0  270  686   31   12]
+ [   0    0    0    0    0    1    0   63  929    4    3]
+ [   0    0    0    0    0    0    0   48   71  583  298]
+ [   0    0    0    0    0    0    0   46   72  503  379]]
+2025-05-25 09:59:14 INFO: unknown_celeba/SNGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.39174655079841614	 AUROC (%): 55.12
+2025-05-25 09:59:14 INFO: unknown_celeba/AttGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.26485908031463623	 AUROC (%): 86.40
+2025-05-25 09:59:14 INFO: unknown_celeba/starGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.2755565047264099	 AUROC (%): 83.52
+2025-05-25 09:59:14 INFO: unknown_Faces_HQ/styleGAN2	 	 mostly pred class: real	 	 average score: 0.3597564697265625	 AUROC (%): 62.04
+2025-05-25 09:59:14 INFO: unknown_Faces_HQ/styleGAN3_r	 	 mostly pred class: real	 	 average score: 0.292880654335022	 AUROC (%): 79.01
+2025-05-25 09:59:14 INFO: unknown_Faces_HQ/styleGAN3_t	 	 mostly pred class: real	 	 average score: 0.3001575171947479	 AUROC (%): 77.15
+2025-05-25 09:59:14 INFO: unknown_celeba/DisBetaVAE	 	 mostly pred class: celeba_VanillaVAE	 	 average score: 0.6373924612998962	 AUROC (%): 22.69
+2025-05-25 09:59:14 INFO: unknown_celeba/InfoVAE	 	 mostly pred class: celeba_BetaVAE	 	 average score: 0.5213301777839661	 AUROC (%): 29.88
+2025-05-25 09:59:14 INFO: unknown_celeba/glow	 	 mostly pred class: real	 	 average score: 0.36319994926452637	 AUROC (%): 60.35
+2025-05-25 09:59:14 INFO: unknown_celeba/ResFlow	 	 mostly pred class: real	 	 average score: 0.33664971590042114	 AUROC (%): 68.06
+2025-05-25 09:59:14 INFO: unknown_lsun_bedroom/LDM	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.3505550026893616	 AUROC (%): 64.26
+2025-05-25 09:59:14 INFO: unknown_lsun_bedroom/PNDM	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.34508514404296875	 AUROC (%): 66.06
+2025-05-25 09:59:14 INFO: unknown_celeba/Styleformer	 	 mostly pred class: celeba_VanillaVAE	 	 average score: 0.18315836787223816	 AUROC (%): 97.15
+2025-05-25 09:59:14 INFO: unknown_celeba/TransGAN	 	 mostly pred class: celeba_VanillaVAE	 	 average score: 0.46461331844329834	 AUROC (%): 42.46
+2025-05-25 09:59:14 INFO: unknown_ffhq/gansformer	 	 mostly pred class: real	 	 average score: 0.32746779918670654	 AUROC (%): 70.31
+2025-05-25 09:59:14 INFO: unknown_ffhq/StyleSwin	 	 mostly pred class: real	 	 average score: 0.2875503897666931	 AUROC (%): 80.26
+2025-05-25 09:59:14 INFO: unknown_stable_diffusion_xl	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.2794185280799866	 AUROC (%): 83.88
+2025-05-25 09:59:14 INFO: unknown_midjourney_kaggle	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.30119574069976807	 AUROC (%): 77.37
+2025-05-25 09:59:14 INFO: unknown_T2I/glide	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.30780506134033203	 AUROC (%): 75.10
+2025-05-25 09:59:14 INFO: unknown_T2I/dalle-mini	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.3106782138347626	 AUROC (%): 75.01
+2025-05-25 09:59:14 INFO: unknown_T2I/dalle_2	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.29888060688972473	 AUROC (%): 77.96
+2025-05-25 09:59:14 INFO: unknown_T2I/dalle_3	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.28273358941078186	 AUROC (%): 81.95
+2025-05-25 09:59:14 INFO: AUC: 68.91, OSCR: 55.68
+2025-05-25 09:59:14 INFO: ----------------------------  testing end ----------------------------  
+2025-05-25 10:02:45 INFO: ----------------------------  testing begin ----------------------------  
+2025-05-25 10:04:02 INFO: closed-set results: {'recalls': array([0.514, 0.995, 0.993, 0.636, 0.954, 1.   , 1.   , 0.262, 0.998,
+       0.532, 0.543]), 'recall': 0.766090909090909, 'f1': 0.7527813666273108, 'acc': 0.766090909090909}
+2025-05-25 10:04:02 INFO: closed-set confusion matrix: [[ 514    9    0  148  320    0    0    0    3    3    3]
+ [   1  995    0    0    0    0    0    0    3    1    0]
+ [   0    3  993    0    0    0    0    0    0    1    3]
+ [ 235    1    0  636  124    0    0    1    1    1    1]
+ [  33    0    0   12  954    0    0    0    0    1    0]
+ [   0    0    0    0    0 1000    0    0    0    0    0]
+ [   0    0    0    0    0    0 1000    0    0    0    0]
+ [   2    1    0    0    0    0    0  262  720   10    5]
+ [   0    0    0    0    0    0    0    2  998    0    0]
+ [   1    3    0    0    0    0    0   48   60  532  356]
+ [   3    2    0    0    0    0    0   42   72  338  543]]
+2025-05-25 10:05:44 INFO: unknown_celeba/SNGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.39140668511390686	 AUROC (%): 35.23
+2025-05-25 10:05:44 INFO: unknown_celeba/AttGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.3899562954902649	 AUROC (%): 35.71
+2025-05-25 10:05:44 INFO: unknown_celeba/starGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.42052143812179565	 AUROC (%): 32.74
+2025-05-25 10:05:44 INFO: unknown_Faces_HQ/styleGAN2	 	 mostly pred class: Faces_HQ_styleGAN	 	 average score: 0.27788323163986206	 AUROC (%): 60.69
+2025-05-25 10:05:44 INFO: unknown_Faces_HQ/styleGAN3_r	 	 mostly pred class: Faces_HQ_styleGAN	 	 average score: 0.2507311999797821	 AUROC (%): 74.87
+2025-05-25 10:05:44 INFO: unknown_Faces_HQ/styleGAN3_t	 	 mostly pred class: Faces_HQ_styleGAN	 	 average score: 0.2530343234539032	 AUROC (%): 73.86
+2025-05-25 10:05:44 INFO: unknown_celeba/DisBetaVAE	 	 mostly pred class: celeba_VanillaVAE	 	 average score: 0.6483078002929688	 AUROC (%): 18.75
+2025-05-25 10:05:44 INFO: unknown_celeba/InfoVAE	 	 mostly pred class: celeba_BetaVAE	 	 average score: 0.48529505729675293	 AUROC (%): 26.59
+2025-05-25 10:05:44 INFO: unknown_celeba/glow	 	 mostly pred class: Faces_HQ_styleGAN	 	 average score: 0.28418609499931335	 AUROC (%): 57.22
+2025-05-25 10:05:44 INFO: unknown_celeba/ResFlow	 	 mostly pred class: Faces_HQ_styleGAN	 	 average score: 0.2724354565143585	 AUROC (%): 62.28
+2025-05-25 10:05:44 INFO: unknown_lsun_bedroom/LDM	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.24835771322250366	 AUROC (%): 77.52
+2025-05-25 10:05:44 INFO: unknown_lsun_bedroom/PNDM	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.28270450234413147	 AUROC (%): 57.72
+2025-05-25 10:05:44 INFO: unknown_celeba/Styleformer	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.17966483533382416	 AUROC (%): 97.74
+2025-05-25 10:05:44 INFO: unknown_celeba/TransGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.343351811170578	 AUROC (%): 40.53
+2025-05-25 10:05:44 INFO: unknown_ffhq/gansformer	 	 mostly pred class: Faces_HQ_styleGAN	 	 average score: 0.2585010826587677	 AUROC (%): 71.50
+2025-05-25 10:05:44 INFO: unknown_ffhq/StyleSwin	 	 mostly pred class: Faces_HQ_styleGAN	 	 average score: 0.24895548820495605	 AUROC (%): 76.07
+2025-05-25 10:05:44 INFO: unknown_stable_diffusion_xl	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.22420889139175415	 AUROC (%): 89.54
+2025-05-25 10:05:44 INFO: unknown_midjourney_kaggle	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.24135687947273254	 AUROC (%): 78.59
+2025-05-25 10:05:44 INFO: unknown_T2I/glide	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.23148149251937866	 AUROC (%): 85.17
+2025-05-25 10:05:44 INFO: unknown_T2I/dalle-mini	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.24202047288417816	 AUROC (%): 79.86
+2025-05-25 10:05:44 INFO: unknown_T2I/dalle_2	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.2512458264827728	 AUROC (%): 73.34
+2025-05-25 10:05:44 INFO: unknown_T2I/dalle_3	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.2215851992368698	 AUROC (%): 88.31
+2025-05-25 10:05:44 INFO: AUC: 63.36, OSCR: 54.56
+2025-05-25 10:05:44 INFO: ----------------------------  testing end ----------------------------  
+2025-05-25 10:09:16 INFO: ----------------------------  testing begin ----------------------------  
+2025-05-25 10:10:39 INFO: closed-set results: {'recalls': array([0.309, 0.994, 0.996, 0.954, 0.912, 1.   , 1.   , 0.895, 0.967,
+       0.624, 0.463]), 'recall': 0.8285454545454546, 'f1': 0.8177077935706234, 'acc': 0.8285454545454546}
+2025-05-25 10:10:39 INFO: closed-set confusion matrix: [[ 309    2    0  533  113    0    0    3    0   21   19]
+ [   0  994    0    0    0    0    0    3    1    2    0]
+ [   0    1  996    0    0    0    0    1    0    2    0]
+ [  26    1    0  954   13    0    0    1    0    4    1]
+ [  21    0    0   66  912    0    0    0    0    0    1]
+ [   0    0    0    0    0 1000    0    0    0    0    0]
+ [   0    0    0    0    0    0 1000    0    0    0    0]
+ [   0    0    0    0    0    0    0  895   94    7    4]
+ [   0    0    0    0    0    0    0   33  967    0    0]
+ [   0    0    0    0    0    0    0   64    1  624  311]
+ [   0    0    0    0    0    0    0   53   14  470  463]]
+2025-05-25 10:12:21 INFO: unknown_celeba/SNGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.40134289860725403	 AUROC (%): 49.21
+2025-05-25 10:12:21 INFO: unknown_celeba/AttGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.40632155537605286	 AUROC (%): 48.26
+2025-05-25 10:12:21 INFO: unknown_celeba/starGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.4532676041126251	 AUROC (%): 40.16
+2025-05-25 10:12:21 INFO: unknown_Faces_HQ/styleGAN2	 	 mostly pred class: Faces_HQ_styleGAN	 	 average score: 0.3433692455291748	 AUROC (%): 67.04
+2025-05-25 10:12:21 INFO: unknown_Faces_HQ/styleGAN3_r	 	 mostly pred class: Faces_HQ_ProGAN	 	 average score: 0.31669512391090393	 AUROC (%): 75.23
+2025-05-25 10:12:21 INFO: unknown_Faces_HQ/styleGAN3_t	 	 mostly pred class: Faces_HQ_ProGAN	 	 average score: 0.318472683429718	 AUROC (%): 74.90
+2025-05-25 10:12:21 INFO: unknown_celeba/DisBetaVAE	 	 mostly pred class: celeba_VanillaVAE	 	 average score: 0.6578143239021301	 AUROC (%): 20.53
+2025-05-25 10:12:21 INFO: unknown_celeba/InfoVAE	 	 mostly pred class: celeba_BetaVAE	 	 average score: 0.44445592164993286	 AUROC (%): 40.14
+2025-05-25 10:12:21 INFO: unknown_celeba/glow	 	 mostly pred class: Faces_HQ_styleGAN	 	 average score: 0.34438183903694153	 AUROC (%): 66.26
+2025-05-25 10:12:21 INFO: unknown_celeba/ResFlow	 	 mostly pred class: Faces_HQ_styleGAN	 	 average score: 0.3352673351764679	 AUROC (%): 69.54
+2025-05-25 10:12:21 INFO: unknown_lsun_bedroom/LDM	 	 mostly pred class: lsun_bedroom_ADM	 	 average score: 0.3198000490665436	 AUROC (%): 75.44
+2025-05-25 10:12:21 INFO: unknown_lsun_bedroom/PNDM	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.33368733525276184	 AUROC (%): 70.14
+2025-05-25 10:12:21 INFO: unknown_celeba/Styleformer	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.253849059343338	 AUROC (%): 91.28
+2025-05-25 10:12:21 INFO: unknown_celeba/TransGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.33111464977264404	 AUROC (%): 70.81
+2025-05-25 10:12:21 INFO: unknown_ffhq/gansformer	 	 mostly pred class: Faces_HQ_ProGAN	 	 average score: 0.32941460609436035	 AUROC (%): 71.63
+2025-05-25 10:12:21 INFO: unknown_ffhq/StyleSwin	 	 mostly pred class: Faces_HQ_ProGAN	 	 average score: 0.31995993852615356	 AUROC (%): 73.78
+2025-05-25 10:12:21 INFO: unknown_stable_diffusion_xl	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.2729226052761078	 AUROC (%): 91.47
+2025-05-25 10:12:21 INFO: unknown_midjourney_kaggle	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.3004809021949768	 AUROC (%): 82.40
+2025-05-25 10:12:21 INFO: unknown_T2I/glide	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.27692195773124695	 AUROC (%): 88.72
+2025-05-25 10:12:21 INFO: unknown_T2I/dalle-mini	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.29224464297294617	 AUROC (%): 85.22
+2025-05-25 10:12:21 INFO: unknown_T2I/dalle_2	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.31089088320732117	 AUROC (%): 79.33
+2025-05-25 10:12:21 INFO: unknown_T2I/dalle_3	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.28123781085014343	 AUROC (%): 88.70
+2025-05-25 10:12:21 INFO: AUC: 69.10, OSCR: 62.90
+2025-05-25 10:12:21 INFO: ----------------------------  testing end ----------------------------  
+2025-05-25 10:15:52 INFO: ----------------------------  testing begin ----------------------------  
+2025-05-25 10:17:21 INFO: closed-set results: {'recalls': array([0.331, 0.994, 0.995, 0.984, 0.876, 1.   , 1.   , 0.977, 0.527,
+       0.588, 0.625]), 'recall': 0.8088181818181819, 'f1': 0.7998370346444653, 'acc': 0.8088181818181818}
+2025-05-25 10:17:21 INFO: closed-set confusion matrix: [[ 331    9    0  580   64    0    0    1    0    8    7]
+ [   0  994    2    0    0    0    0    2    0    2    0]
+ [   0    0  995    1    0    0    0    1    0    2    1]
+ [   5    1    0  984    6    0    0    0    0    2    2]
+ [  18    0    0  105  876    0    0    0    0    1    0]
+ [   0    0    0    0    0 1000    0    0    0    0    0]
+ [   0    0    0    0    0    0 1000    0    0    0    0]
+ [   2    0    0    0    0    0    0  977    2    9   10]
+ [   0    0    0    0    0    0    0  472  527    0    1]
+ [   2    0    0    0    0    0    0   18    0  588  392]
+ [   0    0    0    0    0    0    0   20    1  354  625]]
+2025-05-25 10:19:02 INFO: unknown_celeba/SNGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.47018060088157654	 AUROC (%): 46.44
+2025-05-25 10:19:02 INFO: unknown_celeba/AttGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.5407594442367554	 AUROC (%): 37.60
+2025-05-25 10:19:02 INFO: unknown_celeba/starGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.5611143708229065	 AUROC (%): 35.23
+2025-05-25 10:19:02 INFO: unknown_Faces_HQ/styleGAN2	 	 mostly pred class: Faces_HQ_styleGAN	 	 average score: 0.3691016137599945	 AUROC (%): 70.81
+2025-05-25 10:19:02 INFO: unknown_Faces_HQ/styleGAN3_r	 	 mostly pred class: Faces_HQ_ProGAN	 	 average score: 0.3631424605846405	 AUROC (%): 71.17
+2025-05-25 10:19:02 INFO: unknown_Faces_HQ/styleGAN3_t	 	 mostly pred class: Faces_HQ_ProGAN	 	 average score: 0.3663040101528168	 AUROC (%): 70.20
+2025-05-25 10:19:02 INFO: unknown_celeba/DisBetaVAE	 	 mostly pred class: celeba_VanillaVAE	 	 average score: 0.730229377746582	 AUROC (%): 18.56
+2025-05-25 10:19:02 INFO: unknown_celeba/InfoVAE	 	 mostly pred class: celeba_VanillaVAE	 	 average score: 0.5450137853622437	 AUROC (%): 36.23
+2025-05-25 10:19:02 INFO: unknown_celeba/glow	 	 mostly pred class: Faces_HQ_styleGAN	 	 average score: 0.3669224977493286	 AUROC (%): 71.57
+2025-05-25 10:19:02 INFO: unknown_celeba/ResFlow	 	 mostly pred class: Faces_HQ_ProGAN	 	 average score: 0.3615493178367615	 AUROC (%): 72.74
+2025-05-25 10:19:02 INFO: unknown_lsun_bedroom/LDM	 	 mostly pred class: lsun_bedroom_ADM	 	 average score: 0.3558669686317444	 AUROC (%): 74.79
+2025-05-25 10:19:02 INFO: unknown_lsun_bedroom/PNDM	 	 mostly pred class: lsun_bedroom_ADM	 	 average score: 0.3147113025188446	 AUROC (%): 88.94
+2025-05-25 10:19:02 INFO: unknown_celeba/Styleformer	 	 mostly pred class: Faces_HQ_ProGAN	 	 average score: 0.23987460136413574	 AUROC (%): 94.95
+2025-05-25 10:19:02 INFO: unknown_celeba/TransGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.421406626701355	 AUROC (%): 53.72
+2025-05-25 10:19:02 INFO: unknown_ffhq/gansformer	 	 mostly pred class: Faces_HQ_ProGAN	 	 average score: 0.3676205575466156	 AUROC (%): 70.44
+2025-05-25 10:19:02 INFO: unknown_ffhq/StyleSwin	 	 mostly pred class: Faces_HQ_ProGAN	 	 average score: 0.36547523736953735	 AUROC (%): 70.33
+2025-05-25 10:19:02 INFO: unknown_stable_diffusion_xl	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.32391268014907837	 AUROC (%): 86.09
+2025-05-25 10:19:02 INFO: unknown_midjourney_kaggle	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.3166346848011017	 AUROC (%): 88.02
+2025-05-25 10:19:02 INFO: unknown_T2I/glide	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.2869170010089874	 AUROC (%): 94.74
+2025-05-25 10:19:02 INFO: unknown_T2I/dalle-mini	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.3191300630569458	 AUROC (%): 87.85
+2025-05-25 10:19:02 INFO: unknown_T2I/dalle_2	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.32325902581214905	 AUROC (%): 86.56
+2025-05-25 10:19:02 INFO: unknown_T2I/dalle_3	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.29826658964157104	 AUROC (%): 92.61
+2025-05-25 10:19:02 INFO: AUC: 69.07, OSCR: 60.95
+2025-05-25 10:19:02 INFO: ----------------------------  testing end ----------------------------  
+2025-05-25 10:22:33 INFO: ----------------------------  testing begin ----------------------------  
+2025-05-25 10:24:06 INFO: closed-set results: {'recalls': array([0.795, 0.994, 0.994, 0.794, 0.934, 1.   , 1.   , 0.972, 0.868,
+       0.273, 0.887]), 'recall': 0.8646363636363638, 'f1': 0.8569409737485052, 'acc': 0.8646363636363636}
+2025-05-25 10:24:06 INFO: closed-set confusion matrix: [[ 795    3    0   99   88    0    0    1    0    3   11]
+ [   2  994    1    0    0    0    0    2    0    1    0]
+ [   2    0  994    0    0    0    0    0    0    1    3]
+ [ 179    1    0  794   22    0    0    0    0    1    3]
+ [  59    0    0    6  934    0    0    0    0    1    0]
+ [   0    0    0    0    0 1000    0    0    0    0    0]
+ [   0    0    0    0    0    0 1000    0    0    0    0]
+ [   1    0    0    0    0    0    0  972    8    2   17]
+ [   0    0    0    0    0    0    0  131  868    0    1]
+ [   0    0    0    0    0    0    0   13    0  273  714]
+ [   1    0    0    0    0    0    0   10    5   97  887]]
+2025-05-25 10:25:46 INFO: unknown_celeba/SNGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.5265953540802002	 AUROC (%): 46.38
+2025-05-25 10:25:46 INFO: unknown_celeba/AttGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.46639660000801086	 AUROC (%): 57.66
+2025-05-25 10:25:46 INFO: unknown_celeba/starGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.5020924806594849	 AUROC (%): 50.91
+2025-05-25 10:25:46 INFO: unknown_Faces_HQ/styleGAN2	 	 mostly pred class: Faces_HQ_styleGAN	 	 average score: 0.39915716648101807	 AUROC (%): 78.19
+2025-05-25 10:25:46 INFO: unknown_Faces_HQ/styleGAN3_r	 	 mostly pred class: real	 	 average score: 0.3758814334869385	 AUROC (%): 84.15
+2025-05-25 10:25:46 INFO: unknown_Faces_HQ/styleGAN3_t	 	 mostly pred class: real	 	 average score: 0.38077184557914734	 AUROC (%): 82.80
+2025-05-25 10:25:46 INFO: unknown_celeba/DisBetaVAE	 	 mostly pred class: celeba_VanillaVAE	 	 average score: 0.45962199568748474	 AUROC (%): 60.69
+2025-05-25 10:25:46 INFO: unknown_celeba/InfoVAE	 	 mostly pred class: celeba_BetaVAE	 	 average score: 0.34883031249046326	 AUROC (%): 89.84
+2025-05-25 10:25:46 INFO: unknown_celeba/glow	 	 mostly pred class: Faces_HQ_styleGAN	 	 average score: 0.42560186982154846	 AUROC (%): 70.73
+2025-05-25 10:25:46 INFO: unknown_celeba/ResFlow	 	 mostly pred class: Faces_HQ_styleGAN	 	 average score: 0.39212507009506226	 AUROC (%): 80.07
+2025-05-25 10:25:46 INFO: unknown_lsun_bedroom/LDM	 	 mostly pred class: lsun_bedroom_ADM	 	 average score: 0.4213884472846985	 AUROC (%): 69.85
+2025-05-25 10:25:46 INFO: unknown_lsun_bedroom/PNDM	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.3756085932254791	 AUROC (%): 83.14
+2025-05-25 10:25:46 INFO: unknown_celeba/Styleformer	 	 mostly pred class: real	 	 average score: 0.2877385914325714	 AUROC (%): 92.21
+2025-05-25 10:25:46 INFO: unknown_celeba/TransGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.4308842122554779	 AUROC (%): 66.23
+2025-05-25 10:25:46 INFO: unknown_ffhq/gansformer	 	 mostly pred class: real	 	 average score: 0.38692888617515564	 AUROC (%): 81.28
+2025-05-25 10:25:46 INFO: unknown_ffhq/StyleSwin	 	 mostly pred class: real	 	 average score: 0.37457403540611267	 AUROC (%): 84.33
+2025-05-25 10:25:46 INFO: unknown_stable_diffusion_xl	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.3541724979877472	 AUROC (%): 88.59
+2025-05-25 10:25:46 INFO: unknown_midjourney_kaggle	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.378089040517807	 AUROC (%): 81.23
+2025-05-25 10:25:46 INFO: unknown_T2I/glide	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.31501248478889465	 AUROC (%): 94.76
+2025-05-25 10:25:46 INFO: unknown_T2I/dalle-mini	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.3748611509799957	 AUROC (%): 82.76
+2025-05-25 10:25:46 INFO: unknown_T2I/dalle_2	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.3830416798591614	 AUROC (%): 81.33
+2025-05-25 10:25:46 INFO: unknown_T2I/dalle_3	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.3469393849372864	 AUROC (%): 88.72
+2025-05-25 10:25:46 INFO: AUC: 77.08, OSCR: 70.74
+2025-05-25 10:25:46 INFO: ----------------------------  testing end ----------------------------  
+2025-05-25 10:29:16 INFO: ----------------------------  testing begin ----------------------------  
+2025-05-25 10:30:54 INFO: closed-set results: {'recalls': array([0.8  , 0.994, 0.995, 0.856, 0.864, 1.   , 1.   , 0.957, 0.98 ,
+       0.712, 0.479]), 'recall': 0.8760909090909089, 'f1': 0.8742162483314085, 'acc': 0.8760909090909091}
+2025-05-25 10:30:54 INFO: closed-set confusion matrix: [[ 800    5    0  129   41    0    0    2    0   15    8]
+ [   0  994    0    0    0    0    0    0    3    3    0]
+ [   0    0  995    0    0    0    0    0    0    2    3]
+ [ 129    3    0  856    4    0    0    2    0    3    3]
+ [ 107    0    0   28  864    0    0    0    0    1    0]
+ [   0    0    0    0    0 1000    0    0    0    0    0]
+ [   0    0    0    0    0    0 1000    0    0    0    0]
+ [   0    0    0    0    0    0    0  957   40    2    1]
+ [   0    0    0    0    0    0    0   20  980    0    0]
+ [   0    0    0    0    0    0    0   47    1  712  240]
+ [   0    0    0    0    0    0    0   55    8  458  479]]
+2025-05-25 10:32:36 INFO: unknown_celeba/SNGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.5750781297683716	 AUROC (%): 49.16
+2025-05-25 10:32:36 INFO: unknown_celeba/AttGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.4657863676548004	 AUROC (%): 68.52
+2025-05-25 10:32:36 INFO: unknown_celeba/starGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.4884689450263977	 AUROC (%): 64.51
+2025-05-25 10:32:36 INFO: unknown_Faces_HQ/styleGAN2	 	 mostly pred class: real	 	 average score: 0.41466236114501953	 AUROC (%): 80.48
+2025-05-25 10:32:36 INFO: unknown_Faces_HQ/styleGAN3_r	 	 mostly pred class: real	 	 average score: 0.40316784381866455	 AUROC (%): 81.78
+2025-05-25 10:32:36 INFO: unknown_Faces_HQ/styleGAN3_t	 	 mostly pred class: real	 	 average score: 0.4114440381526947	 AUROC (%): 80.50
+2025-05-25 10:32:36 INFO: unknown_celeba/DisBetaVAE	 	 mostly pred class: celeba_VanillaVAE	 	 average score: 0.6902592778205872	 AUROC (%): 30.72
+2025-05-25 10:32:36 INFO: unknown_celeba/InfoVAE	 	 mostly pred class: celeba_VanillaVAE	 	 average score: 0.47094786167144775	 AUROC (%): 68.23
+2025-05-25 10:32:36 INFO: unknown_celeba/glow	 	 mostly pred class: Faces_HQ_styleGAN	 	 average score: 0.40923362970352173	 AUROC (%): 81.79
+2025-05-25 10:32:36 INFO: unknown_celeba/ResFlow	 	 mostly pred class: real	 	 average score: 0.3967008590698242	 AUROC (%): 84.41
+2025-05-25 10:32:36 INFO: unknown_lsun_bedroom/LDM	 	 mostly pred class: lsun_bedroom_ADM	 	 average score: 0.48092278838157654	 AUROC (%): 66.38
+2025-05-25 10:32:36 INFO: unknown_lsun_bedroom/PNDM	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.49529170989990234	 AUROC (%): 64.12
+2025-05-25 10:32:36 INFO: unknown_celeba/Styleformer	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.3589220643043518	 AUROC (%): 86.28
+2025-05-25 10:32:36 INFO: unknown_celeba/TransGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.49785706400871277	 AUROC (%): 62.51
+2025-05-25 10:32:36 INFO: unknown_ffhq/gansformer	 	 mostly pred class: real	 	 average score: 0.42078375816345215	 AUROC (%): 78.85
+2025-05-25 10:32:36 INFO: unknown_ffhq/StyleSwin	 	 mostly pred class: real	 	 average score: 0.4021652340888977	 AUROC (%): 81.93
+2025-05-25 10:32:36 INFO: unknown_stable_diffusion_xl	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.3624764680862427	 AUROC (%): 89.90
+2025-05-25 10:32:36 INFO: unknown_midjourney_kaggle	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.3841838240623474	 AUROC (%): 86.14
+2025-05-25 10:32:36 INFO: unknown_T2I/glide	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.36087459325790405	 AUROC (%): 88.69
+2025-05-25 10:32:36 INFO: unknown_T2I/dalle-mini	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.3699876070022583	 AUROC (%): 88.57
+2025-05-25 10:32:36 INFO: unknown_T2I/dalle_2	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.40247777104377747	 AUROC (%): 82.64
+2025-05-25 10:32:36 INFO: unknown_T2I/dalle_3	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.3585596978664398	 AUROC (%): 90.35
+2025-05-25 10:32:36 INFO: AUC: 75.29, OSCR: 70.73
+2025-05-25 10:32:36 INFO: ----------------------------  testing end ----------------------------  
+2025-05-25 10:36:05 INFO: ----------------------------  testing begin ----------------------------  
+2025-05-25 10:37:53 INFO: closed-set results: {'recalls': array([0.881, 0.989, 0.995, 0.803, 0.844, 1.   , 1.   , 0.955, 0.967,
+       0.579, 0.668]), 'recall': 0.8800909090909091, 'f1': 0.8812772011821941, 'acc': 0.8800909090909091}
+2025-05-25 10:37:53 INFO: closed-set confusion matrix: [[ 881    1    1   57   24    0    0    0    0   20   16]
+ [   2  989    2    0    0    0    0    1    3    2    1]
+ [   0    0  995    0    0    0    0    0    0    2    3]
+ [ 185    1    0  803    4    0    0    0    0    4    3]
+ [ 145    0    0   10  844    0    0    0    0    1    0]
+ [   0    0    0    0    0 1000    0    0    0    0    0]
+ [   0    0    0    0    0    0 1000    0    0    0    0]
+ [   0    0    0    0    0    0    0  955   30    8    7]
+ [   0    0    0    0    0    0    0   33  967    0    0]
+ [   0    0    0    0    0    0    0   11    0  579  410]
+ [   0    0    0    0    0    0    0    9    5  318  668]]
+2025-05-25 10:39:34 INFO: unknown_celeba/SNGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.542513370513916	 AUROC (%): 58.63
+2025-05-25 10:39:34 INFO: unknown_celeba/AttGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.6214385032653809	 AUROC (%): 45.32
+2025-05-25 10:39:34 INFO: unknown_celeba/starGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.6312990784645081	 AUROC (%): 43.85
+2025-05-25 10:39:34 INFO: unknown_Faces_HQ/styleGAN2	 	 mostly pred class: real	 	 average score: 0.4471642076969147	 AUROC (%): 78.16
+2025-05-25 10:39:34 INFO: unknown_Faces_HQ/styleGAN3_r	 	 mostly pred class: real	 	 average score: 0.44462820887565613	 AUROC (%): 77.57
+2025-05-25 10:39:34 INFO: unknown_Faces_HQ/styleGAN3_t	 	 mostly pred class: real	 	 average score: 0.45388370752334595	 AUROC (%): 75.99
+2025-05-25 10:39:34 INFO: unknown_celeba/DisBetaVAE	 	 mostly pred class: celeba_VanillaVAE	 	 average score: 0.6572368741035461	 AUROC (%): 40.26
+2025-05-25 10:39:34 INFO: unknown_celeba/InfoVAE	 	 mostly pred class: celeba_VanillaVAE	 	 average score: 0.46507373452186584	 AUROC (%): 73.71
+2025-05-25 10:39:34 INFO: unknown_celeba/glow	 	 mostly pred class: real	 	 average score: 0.43892577290534973	 AUROC (%): 79.94
+2025-05-25 10:39:34 INFO: unknown_celeba/ResFlow	 	 mostly pred class: real	 	 average score: 0.433043509721756	 AUROC (%): 81.05
+2025-05-25 10:39:34 INFO: unknown_lsun_bedroom/LDM	 	 mostly pred class: lsun_bedroom_ADM	 	 average score: 0.45454108715057373	 AUROC (%): 75.88
+2025-05-25 10:39:34 INFO: unknown_lsun_bedroom/PNDM	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.46488556265830994	 AUROC (%): 73.67
+2025-05-25 10:39:34 INFO: unknown_celeba/Styleformer	 	 mostly pred class: real	 	 average score: 0.31619375944137573	 AUROC (%): 92.85
+2025-05-25 10:39:34 INFO: unknown_celeba/TransGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.3744035065174103	 AUROC (%): 92.26
+2025-05-25 10:39:34 INFO: unknown_ffhq/gansformer	 	 mostly pred class: real	 	 average score: 0.4562896490097046	 AUROC (%): 75.77
+2025-05-25 10:39:34 INFO: unknown_ffhq/StyleSwin	 	 mostly pred class: real	 	 average score: 0.4408878684043884	 AUROC (%): 78.38
+2025-05-25 10:39:34 INFO: unknown_stable_diffusion_xl	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.4000684320926666	 AUROC (%): 87.07
+2025-05-25 10:39:34 INFO: unknown_midjourney_kaggle	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.4190853238105774	 AUROC (%): 83.33
+2025-05-25 10:39:34 INFO: unknown_T2I/glide	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.35913780331611633	 AUROC (%): 92.30
+2025-05-25 10:39:35 INFO: unknown_T2I/dalle-mini	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.4093817174434662	 AUROC (%): 84.95
+2025-05-25 10:39:35 INFO: unknown_T2I/dalle_2	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.42634841799736023	 AUROC (%): 82.07
+2025-05-25 10:39:35 INFO: unknown_T2I/dalle_3	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.39312541484832764	 AUROC (%): 87.85
+2025-05-25 10:39:35 INFO: AUC: 75.49, OSCR: 70.63
+2025-05-25 10:39:35 INFO: ----------------------------  testing end ----------------------------  
+2025-05-25 10:43:05 INFO: ----------------------------  testing begin ----------------------------  
+2025-05-25 10:44:58 INFO: closed-set results: {'recalls': array([0.819, 0.991, 0.994, 0.899, 0.893, 1.   , 1.   , 0.949, 0.938,
+       0.654, 0.586]), 'recall': 0.883909090909091, 'f1': 0.8848246925763156, 'acc': 0.8839090909090909}
+2025-05-25 10:44:58 INFO: closed-set confusion matrix: [[ 819    2    0  108   42    0    0    0    0   11   18]
+ [   1  991    0    0    0    0    0    1    4    3    0]
+ [   0    0  994    0    0    0    0    0    0    2    4]
+ [  88    1    0  899    4    0    0    1    0    3    4]
+ [  83    0    0   23  893    0    0    0    0    1    0]
+ [   0    0    0    0    0 1000    0    0    0    0    0]
+ [   0    0    0    0    0    0 1000    0    0    0    0]
+ [   0    0    0    0    0    0    0  949   23   14   14]
+ [   0    0    0    0    0    0    0   58  938    0    4]
+ [   0    0    0    0    0    0    0    6    0  654  340]
+ [   0    0    0    0    0    0    0    4    3  407  586]]
+2025-05-25 10:46:38 INFO: unknown_celeba/SNGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.522901177406311	 AUROC (%): 64.91
+2025-05-25 10:46:38 INFO: unknown_celeba/AttGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.491929292678833	 AUROC (%): 70.82
+2025-05-25 10:46:38 INFO: unknown_celeba/starGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.5209420919418335	 AUROC (%): 64.91
+2025-05-25 10:46:38 INFO: unknown_Faces_HQ/styleGAN2	 	 mostly pred class: real	 	 average score: 0.436958909034729	 AUROC (%): 83.70
+2025-05-25 10:46:38 INFO: unknown_Faces_HQ/styleGAN3_r	 	 mostly pred class: real	 	 average score: 0.43297821283340454	 AUROC (%): 83.36
+2025-05-25 10:46:38 INFO: unknown_Faces_HQ/styleGAN3_t	 	 mostly pred class: real	 	 average score: 0.4359087347984314	 AUROC (%): 83.12
+2025-05-25 10:46:38 INFO: unknown_celeba/DisBetaVAE	 	 mostly pred class: celeba_VanillaVAE	 	 average score: 0.5629562139511108	 AUROC (%): 57.19
+2025-05-25 10:46:38 INFO: unknown_celeba/InfoVAE	 	 mostly pred class: celeba_BetaVAE	 	 average score: 0.4583626687526703	 AUROC (%): 79.33
+2025-05-25 10:46:38 INFO: unknown_celeba/glow	 	 mostly pred class: real	 	 average score: 0.4257655143737793	 AUROC (%): 86.00
+2025-05-25 10:46:38 INFO: unknown_celeba/ResFlow	 	 mostly pred class: real	 	 average score: 0.42600762844085693	 AUROC (%): 86.00
+2025-05-25 10:46:38 INFO: unknown_lsun_bedroom/LDM	 	 mostly pred class: lsun_bedroom_ADM	 	 average score: 0.4567537307739258	 AUROC (%): 78.61
+2025-05-25 10:46:38 INFO: unknown_lsun_bedroom/PNDM	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.439580500125885	 AUROC (%): 81.16
+2025-05-25 10:46:38 INFO: unknown_celeba/Styleformer	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.3800024390220642	 AUROC (%): 86.59
+2025-05-25 10:46:38 INFO: unknown_celeba/TransGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.3644988536834717	 AUROC (%): 94.86
+2025-05-25 10:46:38 INFO: unknown_ffhq/gansformer	 	 mostly pred class: real	 	 average score: 0.4435368776321411	 AUROC (%): 82.16
+2025-05-25 10:46:38 INFO: unknown_ffhq/StyleSwin	 	 mostly pred class: real	 	 average score: 0.43279168009757996	 AUROC (%): 83.41
+2025-05-25 10:46:38 INFO: unknown_stable_diffusion_xl	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.43259429931640625	 AUROC (%): 83.91
+2025-05-25 10:46:38 INFO: unknown_midjourney_kaggle	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.45227766036987305	 AUROC (%): 79.81
+2025-05-25 10:46:38 INFO: unknown_T2I/glide	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.3799440562725067	 AUROC (%): 90.75
+2025-05-25 10:46:38 INFO: unknown_T2I/dalle-mini	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.4379628002643585	 AUROC (%): 82.51
+2025-05-25 10:46:38 INFO: unknown_T2I/dalle_2	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.462184876203537	 AUROC (%): 78.52
+2025-05-25 10:46:38 INFO: unknown_T2I/dalle_3	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.42231184244155884	 AUROC (%): 84.63
+2025-05-25 10:46:38 INFO: AUC: 80.28, OSCR: 74.55
+2025-05-25 10:46:38 INFO: ----------------------------  testing end ----------------------------  
+2025-05-25 10:50:10 INFO: ----------------------------  testing begin ----------------------------  
+2025-05-25 10:52:11 INFO: closed-set results: {'recalls': array([0.649, 0.995, 0.994, 0.939, 0.932, 1.   , 1.   , 0.942, 0.962,
+       0.708, 0.53 ]), 'recall': 0.8773636363636363, 'f1': 0.8763989991949301, 'acc': 0.8773636363636363}
+2025-05-25 10:52:11 INFO: closed-set confusion matrix: [[ 649    4    0  237   85    0    0    0    0   14   11]
+ [   1  995    0    0    0    0    0    0    1    3    0]
+ [   0    0  994    1    0    0    0    0    0    4    1]
+ [  43    1    0  939    9    0    0    0    0    4    4]
+ [  36    0    0   31  932    0    0    0    0    1    0]
+ [   0    0    0    0    0 1000    0    0    0    0    0]
+ [   0    0    0    0    0    0 1000    0    0    0    0]
+ [   0    0    0    0    0    0    0  942   26   17   15]
+ [   0    0    0    0    0    0    0   34  962    1    3]
+ [   0    0    0    0    0    0    0    4    0  708  288]
+ [   0    0    0    0    0    0    0    4    3  463  530]]
+2025-05-25 10:53:51 INFO: unknown_celeba/SNGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.6597370505332947	 AUROC (%): 44.04
+2025-05-25 10:53:51 INFO: unknown_celeba/AttGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.4901157319545746	 AUROC (%): 76.28
+2025-05-25 10:53:51 INFO: unknown_celeba/starGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.5000504851341248	 AUROC (%): 74.71
+2025-05-25 10:53:51 INFO: unknown_Faces_HQ/styleGAN2	 	 mostly pred class: Faces_HQ_styleGAN	 	 average score: 0.4360017776489258	 AUROC (%): 85.72
+2025-05-25 10:53:51 INFO: unknown_Faces_HQ/styleGAN3_r	 	 mostly pred class: real	 	 average score: 0.4144372344017029	 AUROC (%): 88.97
+2025-05-25 10:53:51 INFO: unknown_Faces_HQ/styleGAN3_t	 	 mostly pred class: real	 	 average score: 0.41509419679641724	 AUROC (%): 89.26
+2025-05-25 10:53:51 INFO: unknown_celeba/DisBetaVAE	 	 mostly pred class: celeba_VanillaVAE	 	 average score: 0.49178868532180786	 AUROC (%): 75.82
+2025-05-25 10:53:51 INFO: unknown_celeba/InfoVAE	 	 mostly pred class: celeba_BetaVAE	 	 average score: 0.34881243109703064	 AUROC (%): 96.74
+2025-05-25 10:53:51 INFO: unknown_celeba/glow	 	 mostly pred class: Faces_HQ_styleGAN	 	 average score: 0.44574329257011414	 AUROC (%): 84.10
+2025-05-25 10:53:51 INFO: unknown_celeba/ResFlow	 	 mostly pred class: Faces_HQ_styleGAN	 	 average score: 0.41439831256866455	 AUROC (%): 89.39
+2025-05-25 10:53:52 INFO: unknown_lsun_bedroom/LDM	 	 mostly pred class: lsun_bedroom_ADM	 	 average score: 0.47203755378723145	 AUROC (%): 78.99
+2025-05-25 10:53:52 INFO: unknown_lsun_bedroom/PNDM	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.4845401346683502	 AUROC (%): 75.68
+2025-05-25 10:53:52 INFO: unknown_celeba/Styleformer	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.37911346554756165	 AUROC (%): 88.94
+2025-05-25 10:53:52 INFO: unknown_celeba/TransGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.597892701625824	 AUROC (%): 55.68
+2025-05-25 10:53:52 INFO: unknown_ffhq/gansformer	 	 mostly pred class: real	 	 average score: 0.42157185077667236	 AUROC (%): 88.46
+2025-05-25 10:53:52 INFO: unknown_ffhq/StyleSwin	 	 mostly pred class: real	 	 average score: 0.413099080324173	 AUROC (%): 89.20
+2025-05-25 10:53:52 INFO: unknown_stable_diffusion_xl	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.46724316477775574	 AUROC (%): 80.42
+2025-05-25 10:53:52 INFO: unknown_midjourney_kaggle	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.495374470949173	 AUROC (%): 75.41
+2025-05-25 10:53:52 INFO: unknown_T2I/glide	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.39447930455207825	 AUROC (%): 89.92
+2025-05-25 10:53:52 INFO: unknown_T2I/dalle-mini	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.4844266474246979	 AUROC (%): 77.16
+2025-05-25 10:53:52 INFO: unknown_T2I/dalle_2	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.5051954388618469	 AUROC (%): 73.94
+2025-05-25 10:53:52 INFO: unknown_T2I/dalle_3	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.4511222839355469	 AUROC (%): 82.29
+2025-05-25 10:53:52 INFO: AUC: 80.05, OSCR: 73.74
+2025-05-25 10:53:52 INFO: ----------------------------  testing end ----------------------------  
+2025-05-25 10:57:21 INFO: ----------------------------  testing begin ----------------------------  
+2025-05-25 10:59:29 INFO: closed-set results: {'recalls': array([0.756, 0.992, 0.995, 0.926, 0.911, 1.   , 1.   , 0.94 , 0.971,
+       0.551, 0.643]), 'recall': 0.8804545454545455, 'f1': 0.8798714817085145, 'acc': 0.8804545454545455}
+2025-05-25 10:59:29 INFO: closed-set confusion matrix: [[ 756    3    0  163   54    0    0    0    0    6   18]
+ [   1  992    0    0    0    0    0    1    4    1    1]
+ [   0    0  995    0    0    0    0    0    0    3    2]
+ [  61    2    0  926    3    0    0    1    0    3    4]
+ [  66    0    0   22  911    0    0    0    0    1    0]
+ [   0    0    0    0    0 1000    0    0    0    0    0]
+ [   0    0    0    0    0    0 1000    0    0    0    0]
+ [   0    0    0    0    0    0    0  940   49    3    8]
+ [   0    0    0    0    0    0    0   29  971    0    0]
+ [   0    1    0    0    0    0    0   21    0  551  427]
+ [   1    0    0    0    0    0    0   23    5  328  643]]
+2025-05-25 11:01:14 INFO: unknown_celeba/SNGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.594666600227356	 AUROC (%): 59.11
+2025-05-25 11:01:14 INFO: unknown_celeba/AttGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.5035579204559326	 AUROC (%): 74.45
+2025-05-25 11:01:14 INFO: unknown_celeba/starGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.5466247797012329	 AUROC (%): 67.30
+2025-05-25 11:01:14 INFO: unknown_Faces_HQ/styleGAN2	 	 mostly pred class: Faces_HQ_styleGAN	 	 average score: 0.4346218407154083	 AUROC (%): 86.63
+2025-05-25 11:01:14 INFO: unknown_Faces_HQ/styleGAN3_r	 	 mostly pred class: real	 	 average score: 0.4287514388561249	 AUROC (%): 86.89
+2025-05-25 11:01:14 INFO: unknown_Faces_HQ/styleGAN3_t	 	 mostly pred class: real	 	 average score: 0.4332468807697296	 AUROC (%): 86.39
+2025-05-25 11:01:14 INFO: unknown_celeba/DisBetaVAE	 	 mostly pred class: celeba_VanillaVAE	 	 average score: 0.5845543146133423	 AUROC (%): 61.04
+2025-05-25 11:01:14 INFO: unknown_celeba/InfoVAE	 	 mostly pred class: celeba_BetaVAE	 	 average score: 0.4558132588863373	 AUROC (%): 83.78
+2025-05-25 11:01:14 INFO: unknown_celeba/glow	 	 mostly pred class: Faces_HQ_styleGAN	 	 average score: 0.42965278029441833	 AUROC (%): 87.31
+2025-05-25 11:01:14 INFO: unknown_celeba/ResFlow	 	 mostly pred class: real	 	 average score: 0.4130975902080536	 AUROC (%): 89.91
+2025-05-25 11:01:15 INFO: unknown_lsun_bedroom/LDM	 	 mostly pred class: lsun_bedroom_ADM	 	 average score: 0.5290864706039429	 AUROC (%): 70.41
+2025-05-25 11:01:15 INFO: unknown_lsun_bedroom/PNDM	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.540518045425415	 AUROC (%): 68.19
+2025-05-25 11:01:15 INFO: unknown_celeba/Styleformer	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.3960898518562317	 AUROC (%): 87.50
+2025-05-25 11:01:15 INFO: unknown_celeba/TransGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.5066946744918823	 AUROC (%): 74.18
+2025-05-25 11:01:15 INFO: unknown_ffhq/gansformer	 	 mostly pred class: real	 	 average score: 0.43232226371765137	 AUROC (%): 86.84
+2025-05-25 11:01:15 INFO: unknown_ffhq/StyleSwin	 	 mostly pred class: real	 	 average score: 0.42261311411857605	 AUROC (%): 87.73
+2025-05-25 11:01:15 INFO: unknown_stable_diffusion_xl	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.4416683614253998	 AUROC (%): 84.73
+2025-05-25 11:01:15 INFO: unknown_midjourney_kaggle	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.48685967922210693	 AUROC (%): 77.54
+2025-05-25 11:01:15 INFO: unknown_T2I/glide	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.38690289855003357	 AUROC (%): 90.95
+2025-05-25 11:01:15 INFO: unknown_T2I/dalle-mini	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.47113633155822754	 AUROC (%): 79.90
+2025-05-25 11:01:15 INFO: unknown_T2I/dalle_2	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.49484366178512573	 AUROC (%): 76.17
+2025-05-25 11:01:15 INFO: unknown_T2I/dalle_3	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.4339947998523712	 AUROC (%): 85.14
+2025-05-25 11:01:15 INFO: AUC: 79.64, OSCR: 74.24
+2025-05-25 11:01:15 INFO: ----------------------------  testing end ----------------------------  
+2025-05-25 11:04:45 INFO: ----------------------------  testing begin ----------------------------  
+2025-05-25 11:07:06 INFO: closed-set results: {'recalls': array([0.626, 0.993, 0.994, 0.965, 0.939, 1.   , 1.   , 0.953, 0.847,
+       0.696, 0.522]), 'recall': 0.8668181818181818, 'f1': 0.8656743654682852, 'acc': 0.8668181818181818}
+2025-05-25 11:07:06 INFO: closed-set confusion matrix: [[ 626    4    0  269   82    0    0    0    0   11    8]
+ [   1  993    0    0    0    0    0    1    2    2    1]
+ [   0    0  994    1    0    0    0    0    0    2    3]
+ [  23    1    0  965    4    0    0    0    0    4    3]
+ [  25    0    0   35  939    0    0    0    0    0    1]
+ [   0    0    0    0    0 1000    0    0    0    0    0]
+ [   0    0    0    0    0    0 1000    0    0    0    0]
+ [   0    0    0    0    0    0    0  953    5   31   11]
+ [   0    0    0    0    0    0    0  151  847    2    0]
+ [   0    0    0    0    0    0    0    4    0  696  300]
+ [   0    0    0    0    0    0    0    3    3  472  522]]
+2025-05-25 11:08:48 INFO: unknown_celeba/SNGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.5842583775520325	 AUROC (%): 58.67
+2025-05-25 11:08:48 INFO: unknown_celeba/AttGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.3684634566307068	 AUROC (%): 93.69
+2025-05-25 11:08:48 INFO: unknown_celeba/starGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.4260493814945221	 AUROC (%): 86.85
+2025-05-25 11:08:48 INFO: unknown_Faces_HQ/styleGAN2	 	 mostly pred class: Faces_HQ_styleGAN	 	 average score: 0.429300993680954	 AUROC (%): 86.38
+2025-05-25 11:08:48 INFO: unknown_Faces_HQ/styleGAN3_r	 	 mostly pred class: real	 	 average score: 0.41846972703933716	 AUROC (%): 87.53
+2025-05-25 11:08:48 INFO: unknown_Faces_HQ/styleGAN3_t	 	 mostly pred class: real	 	 average score: 0.4201100468635559	 AUROC (%): 87.72
+2025-05-25 11:08:48 INFO: unknown_celeba/DisBetaVAE	 	 mostly pred class: celeba_VanillaVAE	 	 average score: 0.5810312628746033	 AUROC (%): 59.36
+2025-05-25 11:08:48 INFO: unknown_celeba/InfoVAE	 	 mostly pred class: celeba_VanillaVAE	 	 average score: 0.4144997298717499	 AUROC (%): 88.08
+2025-05-25 11:08:48 INFO: unknown_celeba/glow	 	 mostly pred class: Faces_HQ_styleGAN	 	 average score: 0.4366553723812103	 AUROC (%): 85.06
+2025-05-25 11:08:48 INFO: unknown_celeba/ResFlow	 	 mostly pred class: real	 	 average score: 0.4104473292827606	 AUROC (%): 89.62
+2025-05-25 11:08:48 INFO: unknown_lsun_bedroom/LDM	 	 mostly pred class: lsun_bedroom_ADM	 	 average score: 0.48271849751472473	 AUROC (%): 76.60
+2025-05-25 11:08:48 INFO: unknown_lsun_bedroom/PNDM	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.4109172523021698	 AUROC (%): 87.90
+2025-05-25 11:08:48 INFO: unknown_celeba/Styleformer	 	 mostly pred class: real	 	 average score: 0.3176589608192444	 AUROC (%): 94.79
+2025-05-25 11:08:48 INFO: unknown_celeba/TransGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.4883792996406555	 AUROC (%): 75.93
+2025-05-25 11:08:48 INFO: unknown_ffhq/gansformer	 	 mostly pred class: real	 	 average score: 0.4257783889770508	 AUROC (%): 87.08
+2025-05-25 11:08:48 INFO: unknown_ffhq/StyleSwin	 	 mostly pred class: real	 	 average score: 0.41636377573013306	 AUROC (%): 87.95
+2025-05-25 11:08:48 INFO: unknown_stable_diffusion_xl	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.46747127175331116	 AUROC (%): 79.52
+2025-05-25 11:08:48 INFO: unknown_midjourney_kaggle	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.4837020933628082	 AUROC (%): 76.61
+2025-05-25 11:08:48 INFO: unknown_T2I/glide	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.3919016122817993	 AUROC (%): 89.86
+2025-05-25 11:08:48 INFO: unknown_T2I/dalle-mini	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.4745946526527405	 AUROC (%): 78.15
+2025-05-25 11:08:48 INFO: unknown_T2I/dalle_2	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.4927029311656952	 AUROC (%): 75.29
+2025-05-25 11:08:48 INFO: unknown_T2I/dalle_3	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.445674329996109	 AUROC (%): 82.48
+2025-05-25 11:08:48 INFO: AUC: 82.51, OSCR: 75.12
+2025-05-25 11:08:48 INFO: ----------------------------  testing end ----------------------------  
+2025-05-25 11:12:18 INFO: ----------------------------  testing begin ----------------------------  
+2025-05-25 11:14:46 INFO: closed-set results: {'recalls': array([0.563, 0.994, 0.994, 0.956, 0.919, 1.   , 1.   , 0.966, 0.848,
+       0.596, 0.642]), 'recall': 0.8616363636363636, 'f1': 0.8599880678354016, 'acc': 0.8616363636363636}
+2025-05-25 11:14:46 INFO: closed-set confusion matrix: [[ 563    3    0  335   79    0    0    0    0    7   13]
+ [   1  994    0    0    0    0    0    1    2    1    1]
+ [   0    0  994    1    0    0    0    0    0    3    2]
+ [  34    1    0  956    2    0    0    0    0    3    4]
+ [  36    0    0   44  919    0    0    0    0    0    1]
+ [   0    0    0    0    0 1000    0    0    0    0    0]
+ [   0    0    0    0    0    0 1000    0    0    0    0]
+ [   0    0    0    0    0    0    0  966    9   10   15]
+ [   0    0    0    0    0    0    0  151  848    0    1]
+ [   0    0    0    0    0    0    0    8    0  596  396]
+ [   0    0    0    0    0    0    0    7    2  349  642]]
+2025-05-25 11:16:28 INFO: unknown_celeba/SNGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.632214367389679	 AUROC (%): 53.74
+2025-05-25 11:16:28 INFO: unknown_celeba/AttGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.4271586835384369	 AUROC (%): 87.90
+2025-05-25 11:16:28 INFO: unknown_celeba/starGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.4498974084854126	 AUROC (%): 84.89
+2025-05-25 11:16:28 INFO: unknown_Faces_HQ/styleGAN2	 	 mostly pred class: Faces_HQ_styleGAN	 	 average score: 0.4368259906768799	 AUROC (%): 86.80
+2025-05-25 11:16:28 INFO: unknown_Faces_HQ/styleGAN3_r	 	 mostly pred class: Faces_HQ_ProGAN	 	 average score: 0.42612627148628235	 AUROC (%): 87.84
+2025-05-25 11:16:28 INFO: unknown_Faces_HQ/styleGAN3_t	 	 mostly pred class: Faces_HQ_ProGAN	 	 average score: 0.4288792610168457	 AUROC (%): 87.70
+2025-05-25 11:16:28 INFO: unknown_celeba/DisBetaVAE	 	 mostly pred class: celeba_VanillaVAE	 	 average score: 0.6193836331367493	 AUROC (%): 56.10
+2025-05-25 11:16:28 INFO: unknown_celeba/InfoVAE	 	 mostly pred class: celeba_VanillaVAE	 	 average score: 0.46607092022895813	 AUROC (%): 83.04
+2025-05-25 11:16:28 INFO: unknown_celeba/glow	 	 mostly pred class: Faces_HQ_styleGAN	 	 average score: 0.445463091135025	 AUROC (%): 85.30
+2025-05-25 11:16:28 INFO: unknown_celeba/ResFlow	 	 mostly pred class: Faces_HQ_ProGAN	 	 average score: 0.42239272594451904	 AUROC (%): 89.05
+2025-05-25 11:16:28 INFO: unknown_lsun_bedroom/LDM	 	 mostly pred class: lsun_bedroom_ADM	 	 average score: 0.5232746601104736	 AUROC (%): 72.37
+2025-05-25 11:16:28 INFO: unknown_lsun_bedroom/PNDM	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.45083290338516235	 AUROC (%): 83.76
+2025-05-25 11:16:28 INFO: unknown_celeba/Styleformer	 	 mostly pred class: real	 	 average score: 0.35593128204345703	 AUROC (%): 91.61
+2025-05-25 11:16:28 INFO: unknown_celeba/TransGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.5003816485404968	 AUROC (%): 76.60
+2025-05-25 11:16:28 INFO: unknown_ffhq/gansformer	 	 mostly pred class: Faces_HQ_ProGAN	 	 average score: 0.4351511597633362	 AUROC (%): 87.06
+2025-05-25 11:16:28 INFO: unknown_ffhq/StyleSwin	 	 mostly pred class: Faces_HQ_ProGAN	 	 average score: 0.4285896420478821	 AUROC (%): 87.47
+2025-05-25 11:16:28 INFO: unknown_stable_diffusion_xl	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.46692559123039246	 AUROC (%): 81.70
+2025-05-25 11:16:28 INFO: unknown_midjourney_kaggle	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.4899749755859375	 AUROC (%): 78.05
+2025-05-25 11:16:28 INFO: unknown_T2I/glide	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.3893224895000458	 AUROC (%): 91.20
+2025-05-25 11:16:28 INFO: unknown_T2I/dalle-mini	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.4882921874523163	 AUROC (%): 78.15
+2025-05-25 11:16:28 INFO: unknown_T2I/dalle_2	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.5057222247123718	 AUROC (%): 75.65
+2025-05-25 11:16:28 INFO: unknown_T2I/dalle_3	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.44890686869621277	 AUROC (%): 83.74
+2025-05-25 11:16:28 INFO: AUC: 81.35, OSCR: 74.26
+2025-05-25 11:16:28 INFO: ----------------------------  testing end ----------------------------  
+2025-05-25 11:19:58 INFO: ----------------------------  testing begin ----------------------------  
+2025-05-25 11:22:31 INFO: closed-set results: {'recalls': array([0.754, 0.996, 0.995, 0.913, 0.87 , 1.   , 1.   , 0.888, 0.982,
+       0.693, 0.496]), 'recall': 0.8715454545454545, 'f1': 0.870820785722389, 'acc': 0.8715454545454545}
+2025-05-25 11:22:31 INFO: closed-set confusion matrix: [[ 754    3    0  179   39    0    0    0    0   17    8]
+ [   0  996    0    0    0    0    0    1    2    0    1]
+ [   0    0  995    0    0    0    0    0    0    4    1]
+ [  76    1    0  913    2    0    0    0    0    4    4]
+ [ 102    0    0   27  870    0    0    0    0    0    1]
+ [   0    0    0    0    0 1000    0    0    0    0    0]
+ [   0    0    0    0    0    0 1000    0    0    0    0]
+ [   0    0    0    0    0    0    0  888   97    9    6]
+ [   0    0    0    0    0    0    0   17  982    1    0]
+ [   0    0    0    0    0    0    0   15    1  693  291]
+ [   0    0    0    0    0    0    0   19    6  479  496]]
+2025-05-25 11:24:13 INFO: unknown_celeba/SNGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.7076135277748108	 AUROC (%): 44.37
+2025-05-25 11:24:13 INFO: unknown_celeba/AttGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.5095385909080505	 AUROC (%): 76.18
+2025-05-25 11:24:13 INFO: unknown_celeba/starGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.5282159447669983	 AUROC (%): 73.48
+2025-05-25 11:24:13 INFO: unknown_Faces_HQ/styleGAN2	 	 mostly pred class: real	 	 average score: 0.4388810396194458	 AUROC (%): 87.47
+2025-05-25 11:24:13 INFO: unknown_Faces_HQ/styleGAN3_r	 	 mostly pred class: real	 	 average score: 0.4444563090801239	 AUROC (%): 86.02
+2025-05-25 11:24:13 INFO: unknown_Faces_HQ/styleGAN3_t	 	 mostly pred class: real	 	 average score: 0.4488443434238434	 AUROC (%): 85.57
+2025-05-25 11:24:13 INFO: unknown_celeba/DisBetaVAE	 	 mostly pred class: celeba_VanillaVAE	 	 average score: 0.4688970148563385	 AUROC (%): 82.31
+2025-05-25 11:24:13 INFO: unknown_celeba/InfoVAE	 	 mostly pred class: celeba_BetaVAE	 	 average score: 0.3555424213409424	 AUROC (%): 96.33
+2025-05-25 11:24:13 INFO: unknown_celeba/glow	 	 mostly pred class: real	 	 average score: 0.43946823477745056	 AUROC (%): 87.41
+2025-05-25 11:24:13 INFO: unknown_celeba/ResFlow	 	 mostly pred class: real	 	 average score: 0.4286828339099884	 AUROC (%): 89.06
+2025-05-25 11:24:13 INFO: unknown_lsun_bedroom/LDM	 	 mostly pred class: lsun_bedroom_ADM	 	 average score: 0.5248004198074341	 AUROC (%): 73.87
+2025-05-25 11:24:13 INFO: unknown_lsun_bedroom/PNDM	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.6267648935317993	 AUROC (%): 56.45
+2025-05-25 11:24:13 INFO: unknown_celeba/Styleformer	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.43878915905952454	 AUROC (%): 83.82
+2025-05-25 11:24:13 INFO: unknown_celeba/TransGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.5675991773605347	 AUROC (%): 66.82
+2025-05-25 11:24:13 INFO: unknown_ffhq/gansformer	 	 mostly pred class: real	 	 average score: 0.4445922374725342	 AUROC (%): 86.39
+2025-05-25 11:24:13 INFO: unknown_ffhq/StyleSwin	 	 mostly pred class: real	 	 average score: 0.438080757856369	 AUROC (%): 86.78
+2025-05-25 11:24:13 INFO: unknown_stable_diffusion_xl	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.46109136939048767	 AUROC (%): 83.44
+2025-05-25 11:24:13 INFO: unknown_midjourney_kaggle	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.49724939465522766	 AUROC (%): 78.18
+2025-05-25 11:24:13 INFO: unknown_T2I/glide	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.4104120135307312	 AUROC (%): 88.61
+2025-05-25 11:24:13 INFO: unknown_T2I/dalle-mini	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.4945129454135895	 AUROC (%): 78.44
+2025-05-25 11:24:13 INFO: unknown_T2I/dalle_2	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.5072896480560303	 AUROC (%): 77.00
+2025-05-25 11:24:13 INFO: unknown_T2I/dalle_3	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.45624256134033203	 AUROC (%): 83.59
+2025-05-25 11:24:13 INFO: AUC: 79.62, OSCR: 73.31
+2025-05-25 11:24:13 INFO: ----------------------------  testing end ----------------------------  
+2025-05-25 11:27:43 INFO: ----------------------------  testing begin ----------------------------  
+2025-05-25 11:30:26 INFO: closed-set results: {'recalls': array([0.673, 0.992, 0.995, 0.925, 0.95 , 1.   , 1.   , 0.958, 0.915,
+       0.707, 0.492]), 'recall': 0.8733636363636367, 'f1': 0.8717902333518577, 'acc': 0.8733636363636363}
+2025-05-25 11:30:26 INFO: closed-set confusion matrix: [[ 673    3    0  199  104    0    0    0    0   13    8]
+ [   1  992    1    0    0    0    0    1    3    1    1]
+ [   0    0  995    0    0    0    0    0    0    4    1]
+ [  51    1    0  925   15    0    0    0    0    4    4]
+ [  30    0    0   19  950    0    0    0    0    0    1]
+ [   0    0    0    0    0 1000    0    0    0    0    0]
+ [   0    0    0    0    0    0 1000    0    0    0    0]
+ [   0    0    0    0    0    0    0  958   24   10    8]
+ [   0    0    0    0    0    0    0   84  915    0    1]
+ [   0    0    0    0    0    0    0    8    0  707  285]
+ [   0    0    0    0    0    0    0    8    3  497  492]]
+2025-05-25 11:32:06 INFO: unknown_celeba/SNGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.6234292984008789	 AUROC (%): 60.89
+2025-05-25 11:32:06 INFO: unknown_celeba/AttGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.5703884363174438	 AUROC (%): 68.92
+2025-05-25 11:32:06 INFO: unknown_celeba/starGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.6071063280105591	 AUROC (%): 63.43
+2025-05-25 11:32:06 INFO: unknown_Faces_HQ/styleGAN2	 	 mostly pred class: Faces_HQ_styleGAN	 	 average score: 0.4682861566543579	 AUROC (%): 84.19
+2025-05-25 11:32:06 INFO: unknown_Faces_HQ/styleGAN3_r	 	 mostly pred class: real	 	 average score: 0.44022035598754883	 AUROC (%): 87.63
+2025-05-25 11:32:06 INFO: unknown_Faces_HQ/styleGAN3_t	 	 mostly pred class: real	 	 average score: 0.44387519359588623	 AUROC (%): 87.41
+2025-05-25 11:32:06 INFO: unknown_celeba/DisBetaVAE	 	 mostly pred class: celeba_VanillaVAE	 	 average score: 0.49797171354293823	 AUROC (%): 79.88
+2025-05-25 11:32:06 INFO: unknown_celeba/InfoVAE	 	 mostly pred class: celeba_BetaVAE	 	 average score: 0.4082150161266327	 AUROC (%): 91.75
+2025-05-25 11:32:06 INFO: unknown_celeba/glow	 	 mostly pred class: Faces_HQ_styleGAN	 	 average score: 0.4813690483570099	 AUROC (%): 82.33
+2025-05-25 11:32:06 INFO: unknown_celeba/ResFlow	 	 mostly pred class: Faces_HQ_styleGAN	 	 average score: 0.44340118765830994	 AUROC (%): 87.66
+2025-05-25 11:32:06 INFO: unknown_lsun_bedroom/LDM	 	 mostly pred class: lsun_bedroom_ADM	 	 average score: 0.5347068905830383	 AUROC (%): 74.24
+2025-05-25 11:32:06 INFO: unknown_lsun_bedroom/PNDM	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.4981672763824463	 AUROC (%): 79.07
+2025-05-25 11:32:06 INFO: unknown_celeba/Styleformer	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.37956592440605164	 AUROC (%): 90.98
+2025-05-25 11:32:06 INFO: unknown_celeba/TransGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.3719170391559601	 AUROC (%): 95.72
+2025-05-25 11:32:06 INFO: unknown_ffhq/gansformer	 	 mostly pred class: real	 	 average score: 0.44616246223449707	 AUROC (%): 87.26
+2025-05-25 11:32:06 INFO: unknown_ffhq/StyleSwin	 	 mostly pred class: real	 	 average score: 0.43576860427856445	 AUROC (%): 88.07
+2025-05-25 11:32:06 INFO: unknown_stable_diffusion_xl	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.4765012264251709	 AUROC (%): 82.78
+2025-05-25 11:32:06 INFO: unknown_midjourney_kaggle	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.49961480498313904	 AUROC (%): 79.41
+2025-05-25 11:32:06 INFO: unknown_T2I/glide	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.40050747990608215	 AUROC (%): 91.12
+2025-05-25 11:32:06 INFO: unknown_T2I/dalle-mini	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.4970172345638275	 AUROC (%): 79.68
+2025-05-25 11:32:06 INFO: unknown_T2I/dalle_2	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.5165266394615173	 AUROC (%): 77.28
+2025-05-25 11:32:06 INFO: unknown_T2I/dalle_3	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.4566228687763214	 AUROC (%): 84.68
+2025-05-25 11:32:06 INFO: AUC: 82.02, OSCR: 75.46
+2025-05-25 11:32:06 INFO: ----------------------------  testing end ----------------------------  
+2025-05-25 11:35:37 INFO: ----------------------------  testing begin ----------------------------  
+2025-05-25 11:38:30 INFO: closed-set results: {'recalls': array([0.778, 0.995, 0.995, 0.893, 0.886, 1.   , 1.   , 0.901, 0.977,
+       0.641, 0.536]), 'recall': 0.872909090909091, 'f1': 0.8723925400334257, 'acc': 0.8729090909090909}
+2025-05-25 11:38:30 INFO: closed-set confusion matrix: [[ 778    4    0  141   60    0    0    0    0   10    7]
+ [   1  995    0    0    0    0    0    1    2    0    1]
+ [   0    0  995    0    0    0    0    0    0    3    2]
+ [  94    1    0  893    5    0    0    0    0    3    4]
+ [  98    1    0   15  886    0    0    0    0    0    0]
+ [   0    0    0    0    0 1000    0    0    0    0    0]
+ [   0    0    0    0    0    0 1000    0    0    0    0]
+ [   0    0    0    0    0    0    0  901   88    3    8]
+ [   0    0    0    0    0    0    0   23  977    0    0]
+ [   1    1    0    0    0    0    0   21    0  641  336]
+ [   0    0    0    0    0    0    0   23    5  436  536]]
+2025-05-25 11:40:11 INFO: unknown_celeba/SNGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.7678903937339783	 AUROC (%): 40.89
+2025-05-25 11:40:11 INFO: unknown_celeba/AttGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.5784698128700256	 AUROC (%): 71.48
+2025-05-25 11:40:11 INFO: unknown_celeba/starGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.6033730506896973	 AUROC (%): 68.22
+2025-05-25 11:40:11 INFO: unknown_Faces_HQ/styleGAN2	 	 mostly pred class: real	 	 average score: 0.4693084955215454	 AUROC (%): 86.48
+2025-05-25 11:40:11 INFO: unknown_Faces_HQ/styleGAN3_r	 	 mostly pred class: real	 	 average score: 0.4721335768699646	 AUROC (%): 85.53
+2025-05-25 11:40:11 INFO: unknown_Faces_HQ/styleGAN3_t	 	 mostly pred class: real	 	 average score: 0.47626742720603943	 AUROC (%): 85.23
+2025-05-25 11:40:11 INFO: unknown_celeba/DisBetaVAE	 	 mostly pred class: celeba_VanillaVAE	 	 average score: 0.4303000867366791	 AUROC (%): 89.15
+2025-05-25 11:40:11 INFO: unknown_celeba/InfoVAE	 	 mostly pred class: celeba_BetaVAE	 	 average score: 0.3085499405860901	 AUROC (%): 98.74
+2025-05-25 11:40:11 INFO: unknown_celeba/glow	 	 mostly pred class: Faces_HQ_styleGAN	 	 average score: 0.4767584800720215	 AUROC (%): 85.45
+2025-05-25 11:40:11 INFO: unknown_celeba/ResFlow	 	 mostly pred class: real	 	 average score: 0.4481199085712433	 AUROC (%): 88.96
+2025-05-25 11:40:11 INFO: unknown_lsun_bedroom/LDM	 	 mostly pred class: lsun_bedroom_ADM	 	 average score: 0.6041500568389893	 AUROC (%): 67.72
+2025-05-25 11:40:11 INFO: unknown_lsun_bedroom/PNDM	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.6853058934211731	 AUROC (%): 53.33
+2025-05-25 11:40:11 INFO: unknown_celeba/Styleformer	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.48222285509109497	 AUROC (%): 82.09
+2025-05-25 11:40:11 INFO: unknown_celeba/TransGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.5804978013038635	 AUROC (%): 71.26
+2025-05-25 11:40:11 INFO: unknown_ffhq/gansformer	 	 mostly pred class: real	 	 average score: 0.47297197580337524	 AUROC (%): 85.79
+2025-05-25 11:40:11 INFO: unknown_ffhq/StyleSwin	 	 mostly pred class: real	 	 average score: 0.46739819645881653	 AUROC (%): 86.13
+2025-05-25 11:40:11 INFO: unknown_stable_diffusion_xl	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.4804653525352478	 AUROC (%): 84.48
+2025-05-25 11:40:11 INFO: unknown_midjourney_kaggle	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.5135267376899719	 AUROC (%): 80.22
+2025-05-25 11:40:11 INFO: unknown_T2I/glide	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.42957237362861633	 AUROC (%): 88.89
+2025-05-25 11:40:11 INFO: unknown_T2I/dalle-mini	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.5076727867126465	 AUROC (%): 80.96
+2025-05-25 11:40:11 INFO: unknown_T2I/dalle_2	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.53547602891922	 AUROC (%): 77.72
+2025-05-25 11:40:11 INFO: unknown_T2I/dalle_3	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.4657994508743286	 AUROC (%): 85.47
+2025-05-25 11:40:11 INFO: AUC: 79.28, OSCR: 73.23
+2025-05-25 11:40:11 INFO: ----------------------------  testing end ----------------------------  
+2025-05-25 11:43:42 INFO: ----------------------------  testing begin ----------------------------  
+2025-05-25 11:46:44 INFO: closed-set results: {'recalls': array([0.76 , 0.996, 0.995, 0.926, 0.903, 1.   , 1.   , 0.945, 0.956,
+       0.699, 0.49 ]), 'recall': 0.879090909090909, 'f1': 0.8782161486725296, 'acc': 0.8790909090909091}
+2025-05-25 11:46:44 INFO: closed-set confusion matrix: [[ 760    5    0  167   47    0    0    0    0   12    9]
+ [   1  996    0    0    0    0    0    1    1    0    1]
+ [   0    0  995    0    0    0    0    1    0    3    1]
+ [  61    3    0  926    3    0    0    0    0    3    4]
+ [  65    1    0   31  903    0    0    0    0    0    0]
+ [   0    0    0    0    0 1000    0    0    0    0    0]
+ [   0    0    0    0    0    0 1000    0    0    0    0]
+ [   0    0    0    0    0    0    0  945   39    9    7]
+ [   0    0    0    0    0    0    0   44  956    0    0]
+ [   0    0    0    0    0    0    0   15    0  699  286]
+ [   0    0    0    0    0    0    0   14    3  493  490]]
+2025-05-25 11:48:25 INFO: unknown_celeba/SNGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.7028554677963257	 AUROC (%): 50.96
+2025-05-25 11:48:25 INFO: unknown_celeba/AttGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.5852219462394714	 AUROC (%): 67.97
+2025-05-25 11:48:25 INFO: unknown_celeba/starGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.6039733290672302	 AUROC (%): 65.41
+2025-05-25 11:48:25 INFO: unknown_Faces_HQ/styleGAN2	 	 mostly pred class: real	 	 average score: 0.4554416537284851	 AUROC (%): 86.85
+2025-05-25 11:48:25 INFO: unknown_Faces_HQ/styleGAN3_r	 	 mostly pred class: real	 	 average score: 0.46014320850372314	 AUROC (%): 85.60
+2025-05-25 11:48:25 INFO: unknown_Faces_HQ/styleGAN3_t	 	 mostly pred class: real	 	 average score: 0.4601868987083435	 AUROC (%): 85.83
+2025-05-25 11:48:25 INFO: unknown_celeba/DisBetaVAE	 	 mostly pred class: celeba_VanillaVAE	 	 average score: 0.59454345703125	 AUROC (%): 66.81
+2025-05-25 11:48:25 INFO: unknown_celeba/InfoVAE	 	 mostly pred class: celeba_BetaVAE	 	 average score: 0.4416840374469757	 AUROC (%): 89.20
+2025-05-25 11:48:25 INFO: unknown_celeba/glow	 	 mostly pred class: Faces_HQ_styleGAN	 	 average score: 0.4560737907886505	 AUROC (%): 86.66
+2025-05-25 11:48:25 INFO: unknown_celeba/ResFlow	 	 mostly pred class: real	 	 average score: 0.4387420117855072	 AUROC (%): 89.02
+2025-05-25 11:48:25 INFO: unknown_lsun_bedroom/LDM	 	 mostly pred class: lsun_bedroom_ADM	 	 average score: 0.5665313601493835	 AUROC (%): 70.68
+2025-05-25 11:48:25 INFO: unknown_lsun_bedroom/PNDM	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.5512540936470032	 AUROC (%): 72.53
+2025-05-25 11:48:25 INFO: unknown_celeba/Styleformer	 	 mostly pred class: real	 	 average score: 0.4035172164440155	 AUROC (%): 88.75
+2025-05-25 11:48:25 INFO: unknown_celeba/TransGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.638473391532898	 AUROC (%): 60.38
+2025-05-25 11:48:25 INFO: unknown_ffhq/gansformer	 	 mostly pred class: real	 	 average score: 0.46094611287117004	 AUROC (%): 85.95
+2025-05-25 11:48:25 INFO: unknown_ffhq/StyleSwin	 	 mostly pred class: real	 	 average score: 0.45536181330680847	 AUROC (%): 86.21
+2025-05-25 11:48:25 INFO: unknown_stable_diffusion_xl	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.46558234095573425	 AUROC (%): 84.73
+2025-05-25 11:48:25 INFO: unknown_midjourney_kaggle	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.4915614128112793	 AUROC (%): 81.31
+2025-05-25 11:48:25 INFO: unknown_T2I/glide	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.4039746820926666	 AUROC (%): 90.70
+2025-05-25 11:48:25 INFO: unknown_T2I/dalle-mini	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.48990610241889954	 AUROC (%): 81.31
+2025-05-25 11:48:25 INFO: unknown_T2I/dalle_2	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.5084536671638489	 AUROC (%): 79.30
+2025-05-25 11:48:25 INFO: unknown_T2I/dalle_3	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.45793694257736206	 AUROC (%): 85.10
+2025-05-25 11:48:25 INFO: AUC: 79.15, OSCR: 73.67
+2025-05-25 11:48:25 INFO: ----------------------------  testing end ----------------------------  
+2025-05-25 11:51:56 INFO: ----------------------------  testing begin ----------------------------  
+2025-05-25 11:55:04 INFO: closed-set results: {'recalls': array([0.736, 0.992, 0.995, 0.88 , 0.917, 1.   , 1.   , 0.934, 0.966,
+       0.677, 0.52 ]), 'recall': 0.8742727272727272, 'f1': 0.8735791521619177, 'acc': 0.8742727272727273}
+2025-05-25 11:55:04 INFO: closed-set confusion matrix: [[ 736    4    0  161   79    0    0    0    0   13    7]
+ [   1  992    1    0    0    0    0    1    3    1    1]
+ [   0    0  995    0    0    0    0    1    0    3    1]
+ [  99    3    0  880   10    0    0    0    0    5    3]
+ [  71    0    0   11  917    0    0    0    0    0    1]
+ [   0    0    0    0    0 1000    0    0    0    0    0]
+ [   0    0    0    0    0    0 1000    0    0    0    0]
+ [   0    0    0    0    0    0    0  934   53    6    7]
+ [   0    0    0    0    0    0    0   33  966    1    0]
+ [   0    0    0    0    0    0    0   15    0  677  308]
+ [   0    0    0    0    0    0    0   14    3  463  520]]
+2025-05-25 11:56:46 INFO: unknown_celeba/SNGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.6718438863754272	 AUROC (%): 56.97
+2025-05-25 11:56:46 INFO: unknown_celeba/AttGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.6108596920967102	 AUROC (%): 65.43
+2025-05-25 11:56:46 INFO: unknown_celeba/starGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.6356558799743652	 AUROC (%): 62.10
+2025-05-25 11:56:46 INFO: unknown_Faces_HQ/styleGAN2	 	 mostly pred class: Faces_HQ_styleGAN	 	 average score: 0.46656352281570435	 AUROC (%): 85.66
+2025-05-25 11:56:46 INFO: unknown_Faces_HQ/styleGAN3_r	 	 mostly pred class: real	 	 average score: 0.45438846945762634	 AUROC (%): 86.54
+2025-05-25 11:56:46 INFO: unknown_Faces_HQ/styleGAN3_t	 	 mostly pred class: real	 	 average score: 0.4585164785385132	 AUROC (%): 86.30
+2025-05-25 11:56:46 INFO: unknown_celeba/DisBetaVAE	 	 mostly pred class: celeba_VanillaVAE	 	 average score: 0.594701886177063	 AUROC (%): 68.01
+2025-05-25 11:56:46 INFO: unknown_celeba/InfoVAE	 	 mostly pred class: celeba_BetaVAE	 	 average score: 0.44697004556655884	 AUROC (%): 88.94
+2025-05-25 11:56:46 INFO: unknown_celeba/glow	 	 mostly pred class: Faces_HQ_styleGAN	 	 average score: 0.472330778837204	 AUROC (%): 84.86
+2025-05-25 11:56:46 INFO: unknown_celeba/ResFlow	 	 mostly pred class: real	 	 average score: 0.4417453110218048	 AUROC (%): 88.72
+2025-05-25 11:56:46 INFO: unknown_lsun_bedroom/LDM	 	 mostly pred class: lsun_bedroom_ADM	 	 average score: 0.5771206021308899	 AUROC (%): 70.19
+2025-05-25 11:56:46 INFO: unknown_lsun_bedroom/PNDM	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.6035367250442505	 AUROC (%): 65.80
+2025-05-25 11:56:46 INFO: unknown_celeba/Styleformer	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.4187411963939667	 AUROC (%): 87.69
+2025-05-25 11:56:46 INFO: unknown_celeba/TransGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.5398532748222351	 AUROC (%): 75.71
+2025-05-25 11:56:46 INFO: unknown_ffhq/gansformer	 	 mostly pred class: real	 	 average score: 0.4542214572429657	 AUROC (%): 86.99
+2025-05-25 11:56:46 INFO: unknown_ffhq/StyleSwin	 	 mostly pred class: real	 	 average score: 0.4471595287322998	 AUROC (%): 87.45
+2025-05-25 11:56:46 INFO: unknown_stable_diffusion_xl	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.48475927114486694	 AUROC (%): 82.87
+2025-05-25 11:56:46 INFO: unknown_midjourney_kaggle	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.5157654881477356	 AUROC (%): 78.63
+2025-05-25 11:56:46 INFO: unknown_T2I/glide	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.4162517189979553	 AUROC (%): 89.86
+2025-05-25 11:56:46 INFO: unknown_T2I/dalle-mini	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.509974479675293	 AUROC (%): 79.37
+2025-05-25 11:56:46 INFO: unknown_T2I/dalle_2	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.5239554643630981	 AUROC (%): 77.91
+2025-05-25 11:56:46 INFO: unknown_T2I/dalle_3	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.48183292150497437	 AUROC (%): 82.66
+2025-05-25 11:56:46 INFO: AUC: 79.03, OSCR: 73.27
+2025-05-25 11:56:46 INFO: ----------------------------  testing end ----------------------------  
+2025-05-25 12:00:16 INFO: ----------------------------  testing begin ----------------------------  
+2025-05-25 12:03:38 INFO: closed-set results: {'recalls': array([0.747, 0.994, 0.996, 0.91 , 0.838, 1.   , 1.   , 0.922, 0.977,
+       0.607, 0.587]), 'recall': 0.8707272727272727, 'f1': 0.87084155536757, 'acc': 0.8707272727272727}
+2025-05-25 12:03:38 INFO: closed-set confusion matrix: [[ 747    2    0  198   30    0    0    0    0   13   10]
+ [   1  994    0    0    0    0    0    1    3    0    1]
+ [   0    0  996    0    0    0    0    0    0    2    2]
+ [  77    2    0  910    3    0    0    0    0    4    4]
+ [ 125    0    0   36  838    0    0    0    0    0    1]
+ [   0    0    0    0    0 1000    0    0    0    0    0]
+ [   0    0    0    0    0    0 1000    0    0    0    0]
+ [   0    0    0    0    0    0    0  922   62    6   10]
+ [   0    0    0    0    0    0    0   23  977    0    0]
+ [   0    0    0    0    0    0    0   18    0  607  375]
+ [   0    0    0    0    0    0    0   19    3  391  587]]
+2025-05-25 12:05:24 INFO: unknown_celeba/SNGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.6790062785148621	 AUROC (%): 54.12
+2025-05-25 12:05:24 INFO: unknown_celeba/AttGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.5709254145622253	 AUROC (%): 69.67
+2025-05-25 12:05:24 INFO: unknown_celeba/starGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.5939096212387085	 AUROC (%): 66.51
+2025-05-25 12:05:24 INFO: unknown_Faces_HQ/styleGAN2	 	 mostly pred class: real	 	 average score: 0.4632954001426697	 AUROC (%): 85.54
+2025-05-25 12:05:24 INFO: unknown_Faces_HQ/styleGAN3_r	 	 mostly pred class: real	 	 average score: 0.4676913917064667	 AUROC (%): 84.28
+2025-05-25 12:05:24 INFO: unknown_Faces_HQ/styleGAN3_t	 	 mostly pred class: real	 	 average score: 0.47283387184143066	 AUROC (%): 83.76
+2025-05-25 12:05:24 INFO: unknown_celeba/DisBetaVAE	 	 mostly pred class: celeba_VanillaVAE	 	 average score: 0.6170935034751892	 AUROC (%): 63.26
+2025-05-25 12:05:24 INFO: unknown_celeba/InfoVAE	 	 mostly pred class: celeba_BetaVAE	 	 average score: 0.4398118853569031	 AUROC (%): 88.98
+2025-05-25 12:05:24 INFO: unknown_celeba/glow	 	 mostly pred class: real	 	 average score: 0.4583967924118042	 AUROC (%): 86.10
+2025-05-25 12:05:24 INFO: unknown_celeba/ResFlow	 	 mostly pred class: real	 	 average score: 0.4465439021587372	 AUROC (%): 87.76
+2025-05-25 12:05:24 INFO: unknown_lsun_bedroom/LDM	 	 mostly pred class: lsun_bedroom_ADM	 	 average score: 0.5812467932701111	 AUROC (%): 68.24
+2025-05-25 12:05:24 INFO: unknown_lsun_bedroom/PNDM	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.6061187386512756	 AUROC (%): 64.10
+2025-05-25 12:05:24 INFO: unknown_celeba/Styleformer	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.4724780023097992	 AUROC (%): 81.49
+2025-05-25 12:05:24 INFO: unknown_celeba/TransGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.5918737053871155	 AUROC (%): 66.69
+2025-05-25 12:05:24 INFO: unknown_ffhq/gansformer	 	 mostly pred class: real	 	 average score: 0.47392553091049194	 AUROC (%): 83.83
+2025-05-25 12:05:24 INFO: unknown_ffhq/StyleSwin	 	 mostly pred class: real	 	 average score: 0.46019697189331055	 AUROC (%): 85.17
+2025-05-25 12:05:24 INFO: unknown_stable_diffusion_xl	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.465064138174057	 AUROC (%): 84.57
+2025-05-25 12:05:24 INFO: unknown_midjourney_kaggle	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.5065077543258667	 AUROC (%): 78.84
+2025-05-25 12:05:24 INFO: unknown_T2I/glide	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.41282379627227783	 AUROC (%): 89.60
+2025-05-25 12:05:24 INFO: unknown_T2I/dalle-mini	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.5029910206794739	 AUROC (%): 79.32
+2025-05-25 12:05:24 INFO: unknown_T2I/dalle_2	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.5084987878799438	 AUROC (%): 78.94
+2025-05-25 12:05:24 INFO: unknown_T2I/dalle_3	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.4609687626361847	 AUROC (%): 84.35
+2025-05-25 12:05:24 INFO: AUC: 77.96, OSCR: 72.21
+2025-05-25 12:05:24 INFO: ----------------------------  testing end ----------------------------  
+2025-05-25 12:08:54 INFO: ----------------------------  testing begin ----------------------------  
+2025-05-25 12:12:24 INFO: closed-set results: {'recalls': array([0.713, 0.996, 0.995, 0.92 , 0.913, 1.   , 1.   , 0.943, 0.952,
+       0.626, 0.572]), 'recall': 0.8754545454545454, 'f1': 0.8751293052814533, 'acc': 0.8754545454545455}
+2025-05-25 12:12:24 INFO: closed-set confusion matrix: [[ 713    3    0  203   55    0    0    0    0   14   12]
+ [   0  996    0    0    0    0    0    1    2    0    1]
+ [   0    0  995    0    0    0    0    1    0    3    1]
+ [  65    2    0  920    5    0    0    0    0    5    3]
+ [  57    0    0   29  913    0    0    0    0    1    0]
+ [   0    0    0    0    0 1000    0    0    0    0    0]
+ [   0    0    0    0    0    0 1000    0    0    0    0]
+ [   0    0    0    0    0    0    0  943   41    7    9]
+ [   0    0    0    0    0    0    0   47  952    1    0]
+ [   0    0    0    0    0    0    0   15    0  626  359]
+ [   0    0    0    0    0    0    0   16    3  409  572]]
+2025-05-25 12:14:07 INFO: unknown_celeba/SNGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.7149532437324524	 AUROC (%): 52.00
+2025-05-25 12:14:07 INFO: unknown_celeba/AttGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.5899561643600464	 AUROC (%): 69.26
+2025-05-25 12:14:07 INFO: unknown_celeba/starGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.6334925889968872	 AUROC (%): 63.48
+2025-05-25 12:14:07 INFO: unknown_Faces_HQ/styleGAN2	 	 mostly pred class: real	 	 average score: 0.45400330424308777	 AUROC (%): 87.51
+2025-05-25 12:14:07 INFO: unknown_Faces_HQ/styleGAN3_r	 	 mostly pred class: real	 	 average score: 0.4543522298336029	 AUROC (%): 86.95
+2025-05-25 12:14:07 INFO: unknown_Faces_HQ/styleGAN3_t	 	 mostly pred class: real	 	 average score: 0.4585895240306854	 AUROC (%): 86.61
+2025-05-25 12:14:07 INFO: unknown_celeba/DisBetaVAE	 	 mostly pred class: celeba_VanillaVAE	 	 average score: 0.5398470163345337	 AUROC (%): 75.98
+2025-05-25 12:14:07 INFO: unknown_celeba/InfoVAE	 	 mostly pred class: celeba_BetaVAE	 	 average score: 0.3921419680118561	 AUROC (%): 94.02
+2025-05-25 12:14:07 INFO: unknown_celeba/glow	 	 mostly pred class: Faces_HQ_styleGAN	 	 average score: 0.45493707060813904	 AUROC (%): 87.30
+2025-05-25 12:14:07 INFO: unknown_celeba/ResFlow	 	 mostly pred class: real	 	 average score: 0.4342840015888214	 AUROC (%): 89.88
+2025-05-25 12:14:07 INFO: unknown_lsun_bedroom/LDM	 	 mostly pred class: lsun_bedroom_ADM	 	 average score: 0.5897576212882996	 AUROC (%): 69.25
+2025-05-25 12:14:07 INFO: unknown_lsun_bedroom/PNDM	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.5748969912528992	 AUROC (%): 70.83
+2025-05-25 12:14:07 INFO: unknown_celeba/Styleformer	 	 mostly pred class: real	 	 average score: 0.38573816418647766	 AUROC (%): 90.97
+2025-05-25 12:14:07 INFO: unknown_celeba/TransGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.5997493863105774	 AUROC (%): 68.02
+2025-05-25 12:14:07 INFO: unknown_ffhq/gansformer	 	 mostly pred class: real	 	 average score: 0.4572543203830719	 AUROC (%): 86.99
+2025-05-25 12:14:07 INFO: unknown_ffhq/StyleSwin	 	 mostly pred class: real	 	 average score: 0.4460392892360687	 AUROC (%): 87.89
+2025-05-25 12:14:07 INFO: unknown_stable_diffusion_xl	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.4823477864265442	 AUROC (%): 83.59
+2025-05-25 12:14:07 INFO: unknown_midjourney_kaggle	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.508920431137085	 AUROC (%): 80.04
+2025-05-25 12:14:07 INFO: unknown_T2I/glide	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.4202084541320801	 AUROC (%): 89.66
+2025-05-25 12:14:07 INFO: unknown_T2I/dalle-mini	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.5102196335792542	 AUROC (%): 79.92
+2025-05-25 12:14:07 INFO: unknown_T2I/dalle_2	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.5176551342010498	 AUROC (%): 79.32
+2025-05-25 12:14:07 INFO: unknown_T2I/dalle_3	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.4717613458633423	 AUROC (%): 84.37
+2025-05-25 12:14:07 INFO: AUC: 80.18, OSCR: 74.14
+2025-05-25 12:14:07 INFO: ----------------------------  testing end ----------------------------  
+2025-05-25 12:17:38 INFO: ----------------------------  testing begin ----------------------------  
+2025-05-25 12:21:13 INFO: closed-set results: {'recalls': array([0.712, 0.993, 0.996, 0.924, 0.922, 1.   , 1.   , 0.962, 0.918,
+       0.627, 0.551]), 'recall': 0.8731818181818182, 'f1': 0.8726018688235663, 'acc': 0.8731818181818182}
+2025-05-25 12:21:13 INFO: closed-set confusion matrix: [[ 712    2    0  182   82    0    0    0    0   14    8]
+ [   1  993    0    0    0    0    0    1    2    1    2]
+ [   0    0  996    0    0    0    0    0    0    2    2]
+ [  58    2    0  924    8    0    0    0    0    5    3]
+ [  57    0    0   20  922    0    0    0    0    0    1]
+ [   0    0    0    0    0 1000    0    0    0    0    0]
+ [   0    0    0    0    0    0 1000    0    0    0    0]
+ [   0    0    0    0    0    0    0  962   23    7    8]
+ [   0    0    0    0    0    0    0   81  918    1    0]
+ [   0    0    0    0    0    0    0   17    0  627  356]
+ [   0    0    0    0    0    0    0   17    2  430  551]]
+2025-05-25 12:22:55 INFO: unknown_celeba/SNGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.7005610466003418	 AUROC (%): 56.18
+2025-05-25 12:22:55 INFO: unknown_celeba/AttGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.6547408103942871	 AUROC (%): 62.61
+2025-05-25 12:22:55 INFO: unknown_celeba/starGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.6806401014328003	 AUROC (%): 59.03
+2025-05-25 12:22:55 INFO: unknown_Faces_HQ/styleGAN2	 	 mostly pred class: Faces_HQ_styleGAN	 	 average score: 0.47769421339035034	 AUROC (%): 85.94
+2025-05-25 12:22:55 INFO: unknown_Faces_HQ/styleGAN3_r	 	 mostly pred class: real	 	 average score: 0.469572514295578	 AUROC (%): 86.43
+2025-05-25 12:22:55 INFO: unknown_Faces_HQ/styleGAN3_t	 	 mostly pred class: real	 	 average score: 0.47319796681404114	 AUROC (%): 86.18
+2025-05-25 12:22:55 INFO: unknown_celeba/DisBetaVAE	 	 mostly pred class: celeba_VanillaVAE	 	 average score: 0.6316832304000854	 AUROC (%): 65.68
+2025-05-25 12:22:55 INFO: unknown_celeba/InfoVAE	 	 mostly pred class: celeba_BetaVAE	 	 average score: 0.4732647240161896	 AUROC (%): 87.13
+2025-05-25 12:22:55 INFO: unknown_celeba/glow	 	 mostly pred class: Faces_HQ_styleGAN	 	 average score: 0.48239779472351074	 AUROC (%): 85.25
+2025-05-25 12:22:55 INFO: unknown_celeba/ResFlow	 	 mostly pred class: real	 	 average score: 0.45588380098342896	 AUROC (%): 88.51
+2025-05-25 12:22:55 INFO: unknown_lsun_bedroom/LDM	 	 mostly pred class: lsun_bedroom_ADM	 	 average score: 0.6077934503555298	 AUROC (%): 68.81
+2025-05-25 12:22:55 INFO: unknown_lsun_bedroom/PNDM	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.5405701994895935	 AUROC (%): 77.44
+2025-05-25 12:22:55 INFO: unknown_celeba/Styleformer	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.4218929409980774	 AUROC (%): 88.87
+2025-05-25 12:22:55 INFO: unknown_celeba/TransGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.5643149614334106	 AUROC (%): 75.07
+2025-05-25 12:22:55 INFO: unknown_ffhq/gansformer	 	 mostly pred class: real	 	 average score: 0.46908074617385864	 AUROC (%): 86.89
+2025-05-25 12:22:55 INFO: unknown_ffhq/StyleSwin	 	 mostly pred class: real	 	 average score: 0.46268314123153687	 AUROC (%): 87.25
+2025-05-25 12:22:55 INFO: unknown_stable_diffusion_xl	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.4937182068824768	 AUROC (%): 83.62
+2025-05-25 12:22:55 INFO: unknown_midjourney_kaggle	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.5264787673950195	 AUROC (%): 79.37
+2025-05-25 12:22:55 INFO: unknown_T2I/glide	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.4202442765235901	 AUROC (%): 90.60
+2025-05-25 12:22:55 INFO: unknown_T2I/dalle-mini	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.5254334807395935	 AUROC (%): 79.58
+2025-05-25 12:22:55 INFO: unknown_T2I/dalle_2	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.5343173742294312	 AUROC (%): 78.82
+2025-05-25 12:22:55 INFO: unknown_T2I/dalle_3	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.48482272028923035	 AUROC (%): 84.06
+2025-05-25 12:22:55 INFO: AUC: 79.24, OSCR: 73.49
+2025-05-25 12:22:55 INFO: ----------------------------  testing end ----------------------------  
+2025-05-25 12:26:26 INFO: ----------------------------  testing begin ----------------------------  
+2025-05-25 12:30:11 INFO: closed-set results: {'recalls': array([0.784, 0.995, 0.995, 0.877, 0.893, 1.   , 1.   , 0.961, 0.914,
+       0.611, 0.589]), 'recall': 0.8744545454545456, 'f1': 0.8748169696468452, 'acc': 0.8744545454545455}
+2025-05-25 12:30:11 INFO: closed-set confusion matrix: [[ 784    5    0  145   45    0    0    0    0   10   11]
+ [   1  995    0    0    0    0    0    1    2    0    1]
+ [   0    0  995    0    0    0    0    0    0    3    2]
+ [ 109    2    0  877    4    0    0    0    0    4    4]
+ [  89    0    0   17  893    0    0    0    0    0    1]
+ [   0    0    0    0    0 1000    0    0    0    0    0]
+ [   0    0    0    0    0    0 1000    0    0    0    0]
+ [   0    0    0    0    0    0    0  961   20    7   12]
+ [   0    0    0    0    0    0    0   85  914    1    0]
+ [   0    0    0    0    0    0    0   16    0  611  373]
+ [   0    0    0    0    0    0    0   16    3  392  589]]
+2025-05-25 12:31:54 INFO: unknown_celeba/SNGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.6591357588768005	 AUROC (%): 56.79
+2025-05-25 12:31:54 INFO: unknown_celeba/AttGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.567893922328949	 AUROC (%): 70.44
+2025-05-25 12:31:54 INFO: unknown_celeba/starGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.5755438208580017	 AUROC (%): 69.46
+2025-05-25 12:31:54 INFO: unknown_Faces_HQ/styleGAN2	 	 mostly pred class: real	 	 average score: 0.463201105594635	 AUROC (%): 85.66
+2025-05-25 12:31:54 INFO: unknown_Faces_HQ/styleGAN3_r	 	 mostly pred class: real	 	 average score: 0.4659826159477234	 AUROC (%): 84.56
+2025-05-25 12:31:54 INFO: unknown_Faces_HQ/styleGAN3_t	 	 mostly pred class: real	 	 average score: 0.4708874225616455	 AUROC (%): 84.08
+2025-05-25 12:31:54 INFO: unknown_celeba/DisBetaVAE	 	 mostly pred class: celeba_VanillaVAE	 	 average score: 0.6318676471710205	 AUROC (%): 60.92
+2025-05-25 12:31:54 INFO: unknown_celeba/InfoVAE	 	 mostly pred class: celeba_BetaVAE	 	 average score: 0.4569573998451233	 AUROC (%): 86.97
+2025-05-25 12:31:54 INFO: unknown_celeba/glow	 	 mostly pred class: real	 	 average score: 0.46955421566963196	 AUROC (%): 84.83
+2025-05-25 12:31:54 INFO: unknown_celeba/ResFlow	 	 mostly pred class: real	 	 average score: 0.4453369975090027	 AUROC (%): 87.88
+2025-05-25 12:31:54 INFO: unknown_lsun_bedroom/LDM	 	 mostly pred class: lsun_bedroom_ADM	 	 average score: 0.5943776965141296	 AUROC (%): 66.46
+2025-05-25 12:31:54 INFO: unknown_lsun_bedroom/PNDM	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.5084030628204346	 AUROC (%): 78.79
+2025-05-25 12:31:54 INFO: unknown_celeba/Styleformer	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.4198330044746399	 AUROC (%): 87.19
+2025-05-25 12:31:54 INFO: unknown_celeba/TransGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.6064162850379944	 AUROC (%): 65.01
+2025-05-25 12:31:54 INFO: unknown_ffhq/gansformer	 	 mostly pred class: real	 	 average score: 0.4676666557788849	 AUROC (%): 84.78
+2025-05-25 12:31:54 INFO: unknown_ffhq/StyleSwin	 	 mostly pred class: real	 	 average score: 0.4572713375091553	 AUROC (%): 85.77
+2025-05-25 12:31:54 INFO: unknown_stable_diffusion_xl	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.48420554399490356	 AUROC (%): 82.42
+2025-05-25 12:31:54 INFO: unknown_midjourney_kaggle	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.5186014175415039	 AUROC (%): 77.45
+2025-05-25 12:31:54 INFO: unknown_T2I/glide	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.4147547781467438	 AUROC (%): 89.69
+2025-05-25 12:31:54 INFO: unknown_T2I/dalle-mini	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.5119017958641052	 AUROC (%): 78.38
+2025-05-25 12:31:54 INFO: unknown_T2I/dalle_2	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.5193028450012207	 AUROC (%): 77.86
+2025-05-25 12:31:54 INFO: unknown_T2I/dalle_3	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.47594255208969116	 AUROC (%): 82.89
+2025-05-25 12:31:54 INFO: AUC: 78.56, OSCR: 72.68
+2025-05-25 12:31:54 INFO: ----------------------------  testing end ----------------------------  
+2025-05-25 12:35:24 INFO: ----------------------------  testing begin ----------------------------  
+2025-05-25 12:39:20 INFO: closed-set results: {'recalls': array([0.769, 0.995, 0.995, 0.901, 0.909, 1.   , 1.   , 0.945, 0.949,
+       0.598, 0.605]), 'recall': 0.8787272727272729, 'f1': 0.8786512042918634, 'acc': 0.8787272727272727}
+2025-05-25 12:39:20 INFO: closed-set confusion matrix: [[ 769    5    0  153   53    0    0    0    0   10   10]
+ [   0  995    0    0    0    0    0    1    3    0    1]
+ [   0    0  995    0    0    0    0    0    0    3    2]
+ [  85    3    0  901    4    0    0    0    0    4    3]
+ [  76    0    0   14  909    0    0    0    0    0    1]
+ [   0    0    0    0    0 1000    0    0    0    0    0]
+ [   0    0    0    0    0    0 1000    0    0    0    0]
+ [   0    0    0    0    0    0    0  945   41    5    9]
+ [   0    0    0    0    0    0    0   50  949    1    0]
+ [   0    0    0    0    0    0    0   17    0  598  385]
+ [   0    0    0    0    0    0    0   18    3  374  605]]
+2025-05-25 12:41:01 INFO: unknown_celeba/SNGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.7121948599815369	 AUROC (%): 55.71
+2025-05-25 12:41:01 INFO: unknown_celeba/AttGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.5978323817253113	 AUROC (%): 70.91
+2025-05-25 12:41:01 INFO: unknown_celeba/starGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.6355707049369812	 AUROC (%): 66.14
+2025-05-25 12:41:01 INFO: unknown_Faces_HQ/styleGAN2	 	 mostly pred class: real	 	 average score: 0.48650893568992615	 AUROC (%): 85.30
+2025-05-25 12:41:01 INFO: unknown_Faces_HQ/styleGAN3_r	 	 mostly pred class: real	 	 average score: 0.48568370938301086	 AUROC (%): 84.74
+2025-05-25 12:41:01 INFO: unknown_Faces_HQ/styleGAN3_t	 	 mostly pred class: real	 	 average score: 0.48984554409980774	 AUROC (%): 84.33
+2025-05-25 12:41:01 INFO: unknown_celeba/DisBetaVAE	 	 mostly pred class: celeba_VanillaVAE	 	 average score: 0.7315884828567505	 AUROC (%): 52.60
+2025-05-25 12:41:01 INFO: unknown_celeba/InfoVAE	 	 mostly pred class: celeba_VanillaVAE	 	 average score: 0.5058780312538147	 AUROC (%): 83.48
+2025-05-25 12:41:01 INFO: unknown_celeba/glow	 	 mostly pred class: Faces_HQ_styleGAN	 	 average score: 0.5003079175949097	 AUROC (%): 83.58
+2025-05-25 12:41:01 INFO: unknown_celeba/ResFlow	 	 mostly pred class: real	 	 average score: 0.4737424850463867	 AUROC (%): 86.74
+2025-05-25 12:41:01 INFO: unknown_lsun_bedroom/LDM	 	 mostly pred class: lsun_bedroom_ADM	 	 average score: 0.611775815486908	 AUROC (%): 68.99
+2025-05-25 12:41:01 INFO: unknown_lsun_bedroom/PNDM	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.578906774520874	 AUROC (%): 72.90
+2025-05-25 12:41:01 INFO: unknown_celeba/Styleformer	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.45250046253204346	 AUROC (%): 86.24
+2025-05-25 12:41:01 INFO: unknown_celeba/TransGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.6007910370826721	 AUROC (%): 70.79
+2025-05-25 12:41:01 INFO: unknown_ffhq/gansformer	 	 mostly pred class: real	 	 average score: 0.4852886497974396	 AUROC (%): 85.15
+2025-05-25 12:41:01 INFO: unknown_ffhq/StyleSwin	 	 mostly pred class: real	 	 average score: 0.4762125611305237	 AUROC (%): 85.88
+2025-05-25 12:41:01 INFO: unknown_stable_diffusion_xl	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.4898216724395752	 AUROC (%): 84.37
+2025-05-25 12:41:01 INFO: unknown_midjourney_kaggle	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.5284645557403564	 AUROC (%): 79.56
+2025-05-25 12:41:01 INFO: unknown_T2I/glide	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.4260384142398834	 AUROC (%): 90.21
+2025-05-25 12:41:01 INFO: unknown_T2I/dalle-mini	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.5232648849487305	 AUROC (%): 80.23
+2025-05-25 12:41:01 INFO: unknown_T2I/dalle_2	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.5292305946350098	 AUROC (%): 79.73
+2025-05-25 12:41:01 INFO: unknown_T2I/dalle_3	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.48318982124328613	 AUROC (%): 84.53
+2025-05-25 12:41:01 INFO: AUC: 78.28, OSCR: 72.97
+2025-05-25 12:41:01 INFO: ----------------------------  testing end ----------------------------  
+2025-05-25 12:44:31 INFO: ----------------------------  testing begin ----------------------------  
+2025-05-25 12:48:36 INFO: closed-set results: {'recalls': array([0.772, 0.995, 0.996, 0.905, 0.908, 1.   , 1.   , 0.955, 0.927,
+       0.609, 0.592]), 'recall': 0.8780909090909091, 'f1': 0.8781170529377735, 'acc': 0.8780909090909091}
+2025-05-25 12:48:36 INFO: closed-set confusion matrix: [[ 772    5    0  149   54    0    0    0    0   11    9]
+ [   1  995    0    0    0    0    0    1    2    0    1]
+ [   0    0  996    0    0    0    0    0    0    1    3]
+ [  82    3    0  905    4    0    0    0    0    3    3]
+ [  73    1    0   18  908    0    0    0    0    0    0]
+ [   0    0    0    0    0 1000    0    0    0    0    0]
+ [   0    0    0    0    0    0 1000    0    0    0    0]
+ [   0    0    0    0    0    0    0  955   28    6   11]
+ [   0    0    0    0    0    0    0   72  927    1    0]
+ [   0    0    0    0    0    0    0   14    0  609  377]
+ [   0    0    0    0    0    0    0   17    2  389  592]]
+2025-05-25 12:50:19 INFO: unknown_celeba/SNGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.6972559690475464	 AUROC (%): 56.05
+2025-05-25 12:50:19 INFO: unknown_celeba/AttGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.5702517032623291	 AUROC (%): 73.22
+2025-05-25 12:50:19 INFO: unknown_celeba/starGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.6067402362823486	 AUROC (%): 68.56
+2025-05-25 12:50:19 INFO: unknown_Faces_HQ/styleGAN2	 	 mostly pred class: real	 	 average score: 0.4765211045742035	 AUROC (%): 85.60
+2025-05-25 12:50:19 INFO: unknown_Faces_HQ/styleGAN3_r	 	 mostly pred class: real	 	 average score: 0.4774421453475952	 AUROC (%): 84.89
+2025-05-25 12:50:19 INFO: unknown_Faces_HQ/styleGAN3_t	 	 mostly pred class: real	 	 average score: 0.48136118054389954	 AUROC (%): 84.48
+2025-05-25 12:50:19 INFO: unknown_celeba/DisBetaVAE	 	 mostly pred class: celeba_VanillaVAE	 	 average score: 0.6900761723518372	 AUROC (%): 57.05
+2025-05-25 12:50:19 INFO: unknown_celeba/InfoVAE	 	 mostly pred class: celeba_BetaVAE	 	 average score: 0.5066277980804443	 AUROC (%): 82.24
+2025-05-25 12:50:19 INFO: unknown_celeba/glow	 	 mostly pred class: Faces_HQ_styleGAN	 	 average score: 0.4753352999687195	 AUROC (%): 85.61
+2025-05-25 12:50:19 INFO: unknown_celeba/ResFlow	 	 mostly pred class: real	 	 average score: 0.45750662684440613	 AUROC (%): 87.73
+2025-05-25 12:50:19 INFO: unknown_lsun_bedroom/LDM	 	 mostly pred class: lsun_bedroom_ADM	 	 average score: 0.6064180731773376	 AUROC (%): 68.32
+2025-05-25 12:50:19 INFO: unknown_lsun_bedroom/PNDM	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.5560464859008789	 AUROC (%): 74.70
+2025-05-25 12:50:19 INFO: unknown_celeba/Styleformer	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.4563228189945221	 AUROC (%): 85.16
+2025-05-25 12:50:19 INFO: unknown_celeba/TransGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.6446834802627563	 AUROC (%): 63.55
+2025-05-25 12:50:19 INFO: unknown_ffhq/gansformer	 	 mostly pred class: real	 	 average score: 0.4770452082157135	 AUROC (%): 85.24
+2025-05-25 12:50:19 INFO: unknown_ffhq/StyleSwin	 	 mostly pred class: real	 	 average score: 0.46710875630378723	 AUROC (%): 86.09
+2025-05-25 12:50:19 INFO: unknown_stable_diffusion_xl	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.48866772651672363	 AUROC (%): 83.64
+2025-05-25 12:50:19 INFO: unknown_midjourney_kaggle	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.5197107791900635	 AUROC (%): 79.63
+2025-05-25 12:50:19 INFO: unknown_T2I/glide	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.4242725670337677	 AUROC (%): 89.66
+2025-05-25 12:50:19 INFO: unknown_T2I/dalle-mini	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.5163195729255676	 AUROC (%): 80.07
+2025-05-25 12:50:19 INFO: unknown_T2I/dalle_2	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.5213091969490051	 AUROC (%): 79.72
+2025-05-25 12:50:19 INFO: unknown_T2I/dalle_3	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.47472015023231506	 AUROC (%): 84.72
+2025-05-25 12:50:19 INFO: AUC: 78.45, OSCR: 72.99
+2025-05-25 12:50:19 INFO: ----------------------------  testing end ----------------------------  
+2025-05-25 12:53:49 INFO: ----------------------------  testing begin ----------------------------  
+2025-05-25 12:58:06 INFO: closed-set results: {'recalls': array([0.735, 0.996, 0.996, 0.908, 0.884, 1.   , 1.   , 0.95 , 0.941,
+       0.623, 0.566]), 'recall': 0.8726363636363637, 'f1': 0.8723819115114011, 'acc': 0.8726363636363637}
+2025-05-25 12:58:06 INFO: closed-set confusion matrix: [[ 735    3    0  203   37    0    0    0    0   12   10]
+ [   0  996    0    0    0    0    0    1    2    0    1]
+ [   0    0  996    0    0    0    0    0    0    2    2]
+ [  77    3    0  908    4    0    0    0    0    5    3]
+ [  88    0    0   27  884    0    0    0    0    0    1]
+ [   0    0    0    0    0 1000    0    0    0    0    0]
+ [   0    0    0    0    0    0 1000    0    0    0    0]
+ [   0    0    0    0    0    0    0  950   36    6    8]
+ [   0    0    0    0    0    0    0   59  941    0    0]
+ [   0    0    0    0    0    0    0   24    0  623  353]
+ [   0    0    0    0    0    0    0   21    4  409  566]]
+2025-05-25 12:59:48 INFO: unknown_celeba/SNGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.7693508267402649	 AUROC (%): 49.31
+2025-05-25 12:59:48 INFO: unknown_celeba/AttGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.63873291015625	 AUROC (%): 67.32
+2025-05-25 12:59:48 INFO: unknown_celeba/starGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.6422039866447449	 AUROC (%): 66.97
+2025-05-25 12:59:48 INFO: unknown_Faces_HQ/styleGAN2	 	 mostly pred class: real	 	 average score: 0.4824488162994385	 AUROC (%): 86.54
+2025-05-25 12:59:48 INFO: unknown_Faces_HQ/styleGAN3_r	 	 mostly pred class: real	 	 average score: 0.48723694682121277	 AUROC (%): 85.49
+2025-05-25 12:59:48 INFO: unknown_Faces_HQ/styleGAN3_t	 	 mostly pred class: real	 	 average score: 0.4941389858722687	 AUROC (%): 84.88
+2025-05-25 12:59:48 INFO: unknown_celeba/DisBetaVAE	 	 mostly pred class: celeba_VanillaVAE	 	 average score: 0.7101611495018005	 AUROC (%): 57.95
+2025-05-25 12:59:48 INFO: unknown_celeba/InfoVAE	 	 mostly pred class: celeba_BetaVAE	 	 average score: 0.489199697971344	 AUROC (%): 86.52
+2025-05-25 12:59:48 INFO: unknown_celeba/glow	 	 mostly pred class: real	 	 average score: 0.48203033208847046	 AUROC (%): 86.60
+2025-05-25 12:59:48 INFO: unknown_celeba/ResFlow	 	 mostly pred class: real	 	 average score: 0.46261078119277954	 AUROC (%): 88.66
+2025-05-25 12:59:48 INFO: unknown_lsun_bedroom/LDM	 	 mostly pred class: lsun_bedroom_ADM	 	 average score: 0.6464052200317383	 AUROC (%): 66.00
+2025-05-25 12:59:48 INFO: unknown_lsun_bedroom/PNDM	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.5945093035697937	 AUROC (%): 72.43
+2025-05-25 12:59:48 INFO: unknown_celeba/Styleformer	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.44514000415802	 AUROC (%): 87.54
+2025-05-25 12:59:48 INFO: unknown_celeba/TransGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.6323893666267395	 AUROC (%): 68.39
+2025-05-25 12:59:48 INFO: unknown_ffhq/gansformer	 	 mostly pred class: real	 	 average score: 0.48795828223228455	 AUROC (%): 85.73
+2025-05-25 12:59:48 INFO: unknown_ffhq/StyleSwin	 	 mostly pred class: real	 	 average score: 0.4782300889492035	 AUROC (%): 86.50
+2025-05-25 12:59:48 INFO: unknown_stable_diffusion_xl	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.5045120716094971	 AUROC (%): 83.58
+2025-05-25 12:59:48 INFO: unknown_midjourney_kaggle	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.5471733212471008	 AUROC (%): 78.53
+2025-05-25 12:59:48 INFO: unknown_T2I/glide	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.4360855221748352	 AUROC (%): 89.78
+2025-05-25 12:59:48 INFO: unknown_T2I/dalle-mini	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.5386417508125305	 AUROC (%): 79.52
+2025-05-25 12:59:48 INFO: unknown_T2I/dalle_2	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.550695538520813	 AUROC (%): 78.33
+2025-05-25 12:59:48 INFO: unknown_T2I/dalle_3	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.4997868537902832	 AUROC (%): 83.75
+2025-05-25 12:59:48 INFO: AUC: 78.20, OSCR: 72.45
+2025-05-25 12:59:48 INFO: ----------------------------  testing end ----------------------------  
+2025-05-25 13:03:19 INFO: ----------------------------  testing begin ----------------------------  
+2025-05-25 13:07:52 INFO: closed-set results: {'recalls': array([0.727, 0.995, 0.996, 0.916, 0.921, 1.   , 1.   , 0.954, 0.91 ,
+       0.593, 0.604]), 'recall': 0.8741818181818182, 'f1': 0.8739493785934939, 'acc': 0.8741818181818182}
+2025-05-25 13:07:52 INFO: closed-set confusion matrix: [[ 727    4    0  185   63    0    0    0    0   11   10]
+ [   0  995    0    0    0    0    0    1    2    1    1]
+ [   0    0  996    0    0    0    0    1    0    2    1]
+ [  66    2    0  916    8    0    0    0    0    5    3]
+ [  62    0    0   16  921    0    0    0    0    0    1]
+ [   0    0    0    0    0 1000    0    0    0    0    0]
+ [   0    0    0    0    0    0 1000    0    0    0    0]
+ [   0    0    0    0    0    0    0  954   27    6   13]
+ [   0    0    0    0    0    0    0   89  910    1    0]
+ [   1    0    0    0    0    0    0   15    0  593  391]
+ [   0    0    0    0    0    0    0   16    2  378  604]]
+2025-05-25 13:09:34 INFO: unknown_celeba/SNGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.720634400844574	 AUROC (%): 56.10
+2025-05-25 13:09:34 INFO: unknown_celeba/AttGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.6136556267738342	 AUROC (%): 70.34
+2025-05-25 13:09:34 INFO: unknown_celeba/starGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.6341540813446045	 AUROC (%): 67.77
+2025-05-25 13:09:34 INFO: unknown_Faces_HQ/styleGAN2	 	 mostly pred class: real	 	 average score: 0.48787710070610046	 AUROC (%): 85.84
+2025-05-25 13:09:34 INFO: unknown_Faces_HQ/styleGAN3_r	 	 mostly pred class: real	 	 average score: 0.48144617676734924	 AUROC (%): 86.02
+2025-05-25 13:09:34 INFO: unknown_Faces_HQ/styleGAN3_t	 	 mostly pred class: real	 	 average score: 0.48631855845451355	 AUROC (%): 85.61
+2025-05-25 13:09:34 INFO: unknown_celeba/DisBetaVAE	 	 mostly pred class: celeba_VanillaVAE	 	 average score: 0.5777527093887329	 AUROC (%): 75.00
+2025-05-25 13:09:34 INFO: unknown_celeba/InfoVAE	 	 mostly pred class: celeba_BetaVAE	 	 average score: 0.4905160963535309	 AUROC (%): 85.80
+2025-05-25 13:09:34 INFO: unknown_celeba/glow	 	 mostly pred class: Faces_HQ_styleGAN	 	 average score: 0.5014382004737854	 AUROC (%): 84.16
+2025-05-25 13:09:34 INFO: unknown_celeba/ResFlow	 	 mostly pred class: real	 	 average score: 0.4669092297554016	 AUROC (%): 88.10
+2025-05-25 13:09:34 INFO: unknown_lsun_bedroom/LDM	 	 mostly pred class: lsun_bedroom_ADM	 	 average score: 0.6380890011787415	 AUROC (%): 66.72
+2025-05-25 13:09:34 INFO: unknown_lsun_bedroom/PNDM	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.5534732937812805	 AUROC (%): 77.37
+2025-05-25 13:09:34 INFO: unknown_celeba/Styleformer	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.47825413942337036	 AUROC (%): 84.55
+2025-05-25 13:09:34 INFO: unknown_celeba/TransGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.6666821241378784	 AUROC (%): 63.83
+2025-05-25 13:09:34 INFO: unknown_ffhq/gansformer	 	 mostly pred class: real	 	 average score: 0.48262760043144226	 AUROC (%): 86.21
+2025-05-25 13:09:34 INFO: unknown_ffhq/StyleSwin	 	 mostly pred class: real	 	 average score: 0.4739992320537567	 AUROC (%): 86.75
+2025-05-25 13:09:34 INFO: unknown_stable_diffusion_xl	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.5079239010810852	 AUROC (%): 83.16
+2025-05-25 13:09:34 INFO: unknown_midjourney_kaggle	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.5370435118675232	 AUROC (%): 79.54
+2025-05-25 13:09:34 INFO: unknown_T2I/glide	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.4364330470561981	 AUROC (%): 89.64
+2025-05-25 13:09:34 INFO: unknown_T2I/dalle-mini	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.5365985035896301	 AUROC (%): 79.59
+2025-05-25 13:09:34 INFO: unknown_T2I/dalle_2	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.5421757698059082	 AUROC (%): 79.21
+2025-05-25 13:09:34 INFO: unknown_T2I/dalle_3	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.4956008195877075	 AUROC (%): 84.02
+2025-05-25 13:09:34 INFO: AUC: 79.33, OSCR: 73.52
+2025-05-25 13:09:34 INFO: ----------------------------  testing end ----------------------------  
+2025-05-25 13:13:05 INFO: ----------------------------  testing begin ----------------------------  
+2025-05-25 13:17:41 INFO: closed-set results: {'recalls': array([0.769, 0.996, 0.995, 0.898, 0.907, 1.   , 1.   , 0.953, 0.939,
+       0.622, 0.567]), 'recall': 0.876909090909091, 'f1': 0.8766412532931603, 'acc': 0.8769090909090909}
+2025-05-25 13:17:41 INFO: closed-set confusion matrix: [[ 769    4    0  145   60    0    0    0    0   12   10]
+ [   0  996    0    0    0    0    0    1    1    1    1]
+ [   0    0  995    0    0    0    0    1    0    3    1]
+ [  83    3    0  898    8    0    0    0    0    5    3]
+ [  75    0    0   17  907    0    0    0    0    0    1]
+ [   0    0    0    0    0 1000    0    0    0    0    0]
+ [   0    0    0    0    0    0 1000    0    0    0    0]
+ [   0    0    0    0    0    0    0  953   36    5    6]
+ [   0    0    0    0    0    0    0   61  939    0    0]
+ [   0    0    0    0    0    0    0   19    0  622  359]
+ [   0    0    0    0    0    0    0   23    3  407  567]]
+2025-05-25 13:19:20 INFO: unknown_celeba/SNGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.7190718650817871	 AUROC (%): 56.24
+2025-05-25 13:19:20 INFO: unknown_celeba/AttGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.5729653239250183	 AUROC (%): 75.47
+2025-05-25 13:19:20 INFO: unknown_celeba/starGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.5800359845161438	 AUROC (%): 74.72
+2025-05-25 13:19:20 INFO: unknown_Faces_HQ/styleGAN2	 	 mostly pred class: real	 	 average score: 0.49557816982269287	 AUROC (%): 84.85
+2025-05-25 13:19:20 INFO: unknown_Faces_HQ/styleGAN3_r	 	 mostly pred class: real	 	 average score: 0.49172452092170715	 AUROC (%): 84.69
+2025-05-25 13:19:20 INFO: unknown_Faces_HQ/styleGAN3_t	 	 mostly pred class: real	 	 average score: 0.4956972301006317	 AUROC (%): 84.37
+2025-05-25 13:19:20 INFO: unknown_celeba/DisBetaVAE	 	 mostly pred class: celeba_VanillaVAE	 	 average score: 0.6873416900634766	 AUROC (%): 60.74
+2025-05-25 13:19:20 INFO: unknown_celeba/InfoVAE	 	 mostly pred class: celeba_BetaVAE	 	 average score: 0.4790878891944885	 AUROC (%): 87.36
+2025-05-25 13:19:20 INFO: unknown_celeba/glow	 	 mostly pred class: Faces_HQ_styleGAN	 	 average score: 0.5022445321083069	 AUROC (%): 83.96
+2025-05-25 13:19:20 INFO: unknown_celeba/ResFlow	 	 mostly pred class: real	 	 average score: 0.4720316231250763	 AUROC (%): 87.38
+2025-05-25 13:19:20 INFO: unknown_lsun_bedroom/LDM	 	 mostly pred class: lsun_bedroom_ADM	 	 average score: 0.6447848081588745	 AUROC (%): 65.84
+2025-05-25 13:19:21 INFO: unknown_lsun_bedroom/PNDM	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.5721577405929565	 AUROC (%): 74.90
+2025-05-25 13:19:21 INFO: unknown_celeba/Styleformer	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.48034465312957764	 AUROC (%): 84.02
+2025-05-25 13:19:21 INFO: unknown_celeba/TransGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.6678719520568848	 AUROC (%): 63.80
+2025-05-25 13:19:21 INFO: unknown_ffhq/gansformer	 	 mostly pred class: real	 	 average score: 0.492438405752182	 AUROC (%): 84.88
+2025-05-25 13:19:21 INFO: unknown_ffhq/StyleSwin	 	 mostly pred class: real	 	 average score: 0.481245219707489	 AUROC (%): 85.85
+2025-05-25 13:19:21 INFO: unknown_stable_diffusion_xl	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.4994039535522461	 AUROC (%): 83.88
+2025-05-25 13:19:21 INFO: unknown_midjourney_kaggle	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.5377867817878723	 AUROC (%): 79.28
+2025-05-25 13:19:21 INFO: unknown_T2I/glide	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.43499821424484253	 AUROC (%): 89.58
+2025-05-25 13:19:21 INFO: unknown_T2I/dalle-mini	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.5369179844856262	 AUROC (%): 79.37
+2025-05-25 13:19:21 INFO: unknown_T2I/dalle_2	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.5382962822914124	 AUROC (%): 79.50
+2025-05-25 13:19:21 INFO: unknown_T2I/dalle_3	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.49442294239997864	 AUROC (%): 83.96
+2025-05-25 13:19:21 INFO: AUC: 78.85, OSCR: 73.29
+2025-05-25 13:19:21 INFO: ----------------------------  testing end ----------------------------  
+2025-05-25 13:22:52 INFO: ----------------------------  testing begin ----------------------------  
+2025-05-25 13:27:44 INFO: closed-set results: {'recalls': array([0.763, 0.997, 0.996, 0.919, 0.899, 1.   , 1.   , 0.937, 0.945,
+       0.658, 0.544]), 'recall': 0.878, 'f1': 0.8775815396765337, 'acc': 0.878}
+2025-05-25 13:27:44 INFO: closed-set confusion matrix: [[ 763    5    0  160   53    0    0    0    0   11    8]
+ [   0  997    0    0    0    0    0    1    1    0    1]
+ [   0    0  996    0    0    0    0    1    0    2    1]
+ [  67    3    0  919    6    0    0    0    0    2    3]
+ [  80    0    0   20  899    0    0    0    0    0    1]
+ [   0    0    0    0    0 1000    0    0    0    0    0]
+ [   0    0    0    0    0    0 1000    0    0    0    0]
+ [   1    0    0    0    0    0    0  937   45    6   11]
+ [   0    0    0    0    0    0    0   54  945    1    0]
+ [   0    0    0    0    0    0    0   17    0  658  325]
+ [   0    0    0    0    0    0    0   19    3  434  544]]
+2025-05-25 13:29:27 INFO: unknown_celeba/SNGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.7375277280807495	 AUROC (%): 56.34
+2025-05-25 13:29:27 INFO: unknown_celeba/AttGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.6419864296913147	 AUROC (%): 68.83
+2025-05-25 13:29:27 INFO: unknown_celeba/starGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.6493505835533142	 AUROC (%): 67.96
+2025-05-25 13:29:27 INFO: unknown_Faces_HQ/styleGAN2	 	 mostly pred class: real	 	 average score: 0.5050556063652039	 AUROC (%): 85.04
+2025-05-25 13:29:27 INFO: unknown_Faces_HQ/styleGAN3_r	 	 mostly pred class: real	 	 average score: 0.5069643259048462	 AUROC (%): 84.26
+2025-05-25 13:29:27 INFO: unknown_Faces_HQ/styleGAN3_t	 	 mostly pred class: real	 	 average score: 0.5100123882293701	 AUROC (%): 84.01
+2025-05-25 13:29:27 INFO: unknown_celeba/DisBetaVAE	 	 mostly pred class: celeba_VanillaVAE	 	 average score: 0.6225945353507996	 AUROC (%): 71.28
+2025-05-25 13:29:27 INFO: unknown_celeba/InfoVAE	 	 mostly pred class: celeba_BetaVAE	 	 average score: 0.5047169923782349	 AUROC (%): 85.43
+2025-05-25 13:29:27 INFO: unknown_celeba/glow	 	 mostly pred class: real	 	 average score: 0.5059698820114136	 AUROC (%): 84.90
+2025-05-25 13:29:27 INFO: unknown_celeba/ResFlow	 	 mostly pred class: real	 	 average score: 0.4852728247642517	 AUROC (%): 87.09
+2025-05-25 13:29:27 INFO: unknown_lsun_bedroom/LDM	 	 mostly pred class: lsun_bedroom_ADM	 	 average score: 0.6278683543205261	 AUROC (%): 70.15
+2025-05-25 13:29:27 INFO: unknown_lsun_bedroom/PNDM	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.5977353453636169	 AUROC (%): 73.33
+2025-05-25 13:29:27 INFO: unknown_celeba/Styleformer	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.47293633222579956	 AUROC (%): 85.90
+2025-05-25 13:29:27 INFO: unknown_celeba/TransGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.6208401918411255	 AUROC (%): 71.69
+2025-05-25 13:29:27 INFO: unknown_ffhq/gansformer	 	 mostly pred class: real	 	 average score: 0.5014296174049377	 AUROC (%): 85.16
+2025-05-25 13:29:27 INFO: unknown_ffhq/StyleSwin	 	 mostly pred class: real	 	 average score: 0.4955328404903412	 AUROC (%): 85.43
+2025-05-25 13:29:27 INFO: unknown_stable_diffusion_xl	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.5073130130767822	 AUROC (%): 84.29
+2025-05-25 13:29:27 INFO: unknown_midjourney_kaggle	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.5415478944778442	 AUROC (%): 80.28
+2025-05-25 13:29:27 INFO: unknown_T2I/glide	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.44032779335975647	 AUROC (%): 89.90
+2025-05-25 13:29:27 INFO: unknown_T2I/dalle-mini	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.540658175945282	 AUROC (%): 80.47
+2025-05-25 13:29:27 INFO: unknown_T2I/dalle_2	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.5453190207481384	 AUROC (%): 80.11
+2025-05-25 13:29:27 INFO: unknown_T2I/dalle_3	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.4968777894973755	 AUROC (%): 84.80
+2025-05-25 13:29:27 INFO: AUC: 79.39, OSCR: 73.82
+2025-05-25 13:29:27 INFO: ----------------------------  testing end ----------------------------  
+2025-05-25 13:32:58 INFO: ----------------------------  testing begin ----------------------------  
+2025-05-25 13:37:59 INFO: closed-set results: {'recalls': array([0.729, 0.995, 0.996, 0.915, 0.911, 1.   , 1.   , 0.949, 0.931,
+       0.617, 0.593]), 'recall': 0.8759999999999999, 'f1': 0.875764317847441, 'acc': 0.876}
+2025-05-25 13:37:59 INFO: closed-set confusion matrix: [[ 729    4    0  185   60    0    0    0    0   12   10]
+ [   0  995    0    0    0    0    0    1    2    0    2]
+ [   0    0  996    0    0    0    0    1    0    2    1]
+ [  70    3    0  915    5    0    0    0    0    3    4]
+ [  70    0    0   18  911    0    0    0    0    0    1]
+ [   0    0    0    0    0 1000    0    0    0    0    0]
+ [   0    0    0    0    0    0 1000    0    0    0    0]
+ [   0    0    0    0    0    0    0  949   33    6   12]
+ [   0    0    0    0    0    0    0   68  931    1    0]
+ [   0    0    0    0    0    0    0   15    0  617  368]
+ [   0    0    0    0    0    0    0   17    3  387  593]]
+2025-05-25 13:39:39 INFO: unknown_celeba/SNGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.7468113899230957	 AUROC (%): 55.19
+2025-05-25 13:39:39 INFO: unknown_celeba/AttGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.6790550351142883	 AUROC (%): 64.36
+2025-05-25 13:39:39 INFO: unknown_celeba/starGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.6739593744277954	 AUROC (%): 65.04
+2025-05-25 13:39:39 INFO: unknown_Faces_HQ/styleGAN2	 	 mostly pred class: real	 	 average score: 0.4988856911659241	 AUROC (%): 85.78
+2025-05-25 13:39:39 INFO: unknown_Faces_HQ/styleGAN3_r	 	 mostly pred class: real	 	 average score: 0.49678781628608704	 AUROC (%): 85.44
+2025-05-25 13:39:39 INFO: unknown_Faces_HQ/styleGAN3_t	 	 mostly pred class: real	 	 average score: 0.5007663369178772	 AUROC (%): 85.15
+2025-05-25 13:39:39 INFO: unknown_celeba/DisBetaVAE	 	 mostly pred class: celeba_VanillaVAE	 	 average score: 0.6536410450935364	 AUROC (%): 67.58
+2025-05-25 13:39:39 INFO: unknown_celeba/InfoVAE	 	 mostly pred class: celeba_BetaVAE	 	 average score: 0.5145800709724426	 AUROC (%): 84.50
+2025-05-25 13:39:39 INFO: unknown_celeba/glow	 	 mostly pred class: real	 	 average score: 0.5060887932777405	 AUROC (%): 84.94
+2025-05-25 13:39:39 INFO: unknown_celeba/ResFlow	 	 mostly pred class: real	 	 average score: 0.47837716341018677	 AUROC (%): 87.78
+2025-05-25 13:39:39 INFO: unknown_lsun_bedroom/LDM	 	 mostly pred class: lsun_bedroom_ADM	 	 average score: 0.6391152739524841	 AUROC (%): 68.88
+2025-05-25 13:39:39 INFO: unknown_lsun_bedroom/PNDM	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.5766593217849731	 AUROC (%): 76.22
+2025-05-25 13:39:39 INFO: unknown_celeba/Styleformer	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.4818204939365387	 AUROC (%): 85.17
+2025-05-25 13:39:39 INFO: unknown_celeba/TransGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.678948163986206	 AUROC (%): 64.74
+2025-05-25 13:39:39 INFO: unknown_ffhq/gansformer	 	 mostly pred class: real	 	 average score: 0.4964922070503235	 AUROC (%): 85.77
+2025-05-25 13:39:39 INFO: unknown_ffhq/StyleSwin	 	 mostly pred class: real	 	 average score: 0.4866305887699127	 AUROC (%): 86.44
+2025-05-25 13:39:39 INFO: unknown_stable_diffusion_xl	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.5149475336074829	 AUROC (%): 83.53
+2025-05-25 13:39:39 INFO: unknown_midjourney_kaggle	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.5519154071807861	 AUROC (%): 79.30
+2025-05-25 13:39:39 INFO: unknown_T2I/glide	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.44587671756744385	 AUROC (%): 89.43
+2025-05-25 13:39:39 INFO: unknown_T2I/dalle-mini	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.5515329241752625	 AUROC (%): 79.37
+2025-05-25 13:39:39 INFO: unknown_T2I/dalle_2	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.5531960129737854	 AUROC (%): 79.44
+2025-05-25 13:39:39 INFO: unknown_T2I/dalle_3	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.5081225633621216	 AUROC (%): 83.81
+2025-05-25 13:39:39 INFO: AUC: 78.54, OSCR: 73.01
+2025-05-25 13:39:39 INFO: ----------------------------  testing end ----------------------------  
+2025-05-25 13:43:10 INFO: ----------------------------  testing begin ----------------------------  
+2025-05-25 13:48:16 INFO: closed-set results: {'recalls': array([0.777, 0.994, 0.996, 0.902, 0.919, 1.   , 1.   , 0.956, 0.91 ,
+       0.686, 0.514]), 'recall': 0.8776363636363637, 'f1': 0.877168737483342, 'acc': 0.8776363636363637}
+2025-05-25 13:48:16 INFO: closed-set confusion matrix: [[ 777    5    0  139   59    0    0    0    0   12    8]
+ [   0  994    0    0    0    0    0    1    2    1    2]
+ [   0    0  996    0    0    0    0    0    0    2    2]
+ [  80    3    0  902    8    0    0    0    0    4    3]
+ [  70    0    0   10  919    0    0    0    0    0    1]
+ [   0    0    0    0    0 1000    0    0    0    0    0]
+ [   0    0    0    0    0    0 1000    0    0    0    0]
+ [   0    0    0    0    0    0    0  956   28    7    9]
+ [   0    0    0    0    0    0    0   89  910    1    0]
+ [   0    1    0    0    0    0    0   14    0  686  299]
+ [   0    0    0    0    0    0    0   14    2  470  514]]
+2025-05-25 13:49:56 INFO: unknown_celeba/SNGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.73115074634552	 AUROC (%): 55.18
+2025-05-25 13:49:56 INFO: unknown_celeba/AttGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.6843414306640625	 AUROC (%): 61.67
+2025-05-25 13:49:56 INFO: unknown_celeba/starGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.6607155203819275	 AUROC (%): 64.83
+2025-05-25 13:49:56 INFO: unknown_Faces_HQ/styleGAN2	 	 mostly pred class: real	 	 average score: 0.5026572346687317	 AUROC (%): 84.50
+2025-05-25 13:49:56 INFO: unknown_Faces_HQ/styleGAN3_r	 	 mostly pred class: real	 	 average score: 0.5038047432899475	 AUROC (%): 83.83
+2025-05-25 13:49:56 INFO: unknown_Faces_HQ/styleGAN3_t	 	 mostly pred class: real	 	 average score: 0.5064886212348938	 AUROC (%): 83.58
+2025-05-25 13:49:56 INFO: unknown_celeba/DisBetaVAE	 	 mostly pred class: celeba_VanillaVAE	 	 average score: 0.6509788632392883	 AUROC (%): 66.19
+2025-05-25 13:49:56 INFO: unknown_celeba/InfoVAE	 	 mostly pred class: celeba_BetaVAE	 	 average score: 0.5043166875839233	 AUROC (%): 84.83
+2025-05-25 13:49:56 INFO: unknown_celeba/glow	 	 mostly pred class: real	 	 average score: 0.5169317126274109	 AUROC (%): 82.85
+2025-05-25 13:49:56 INFO: unknown_celeba/ResFlow	 	 mostly pred class: real	 	 average score: 0.49169060587882996	 AUROC (%): 85.56
+2025-05-25 13:49:56 INFO: unknown_lsun_bedroom/LDM	 	 mostly pred class: lsun_bedroom_ADM	 	 average score: 0.6118063926696777	 AUROC (%): 70.78
+2025-05-25 13:49:56 INFO: unknown_lsun_bedroom/PNDM	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.5426677465438843	 AUROC (%): 79.08
+2025-05-25 13:49:56 INFO: unknown_celeba/Styleformer	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.45717546343803406	 AUROC (%): 86.59
+2025-05-25 13:49:56 INFO: unknown_celeba/TransGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.6422509551048279	 AUROC (%): 67.57
+2025-05-25 13:49:56 INFO: unknown_ffhq/gansformer	 	 mostly pred class: real	 	 average score: 0.4956646263599396	 AUROC (%): 85.00
+2025-05-25 13:49:56 INFO: unknown_ffhq/StyleSwin	 	 mostly pred class: real	 	 average score: 0.4932606518268585	 AUROC (%): 84.85
+2025-05-25 13:49:56 INFO: unknown_stable_diffusion_xl	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.5125394463539124	 AUROC (%): 82.97
+2025-05-25 13:49:56 INFO: unknown_midjourney_kaggle	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.5439679622650146	 AUROC (%): 79.04
+2025-05-25 13:49:56 INFO: unknown_T2I/glide	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.44304323196411133	 AUROC (%): 89.18
+2025-05-25 13:49:56 INFO: unknown_T2I/dalle-mini	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.5449421405792236	 AUROC (%): 78.99
+2025-05-25 13:49:57 INFO: unknown_T2I/dalle_2	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.5488550066947937	 AUROC (%): 78.74
+2025-05-25 13:49:57 INFO: unknown_T2I/dalle_3	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.5019624829292297	 AUROC (%): 83.55
+2025-05-25 13:49:57 INFO: AUC: 78.15, OSCR: 72.56
+2025-05-25 13:49:57 INFO: ----------------------------  testing end ----------------------------  
+2025-05-25 13:53:27 INFO: ----------------------------  testing begin ----------------------------  
+2025-05-25 13:58:44 INFO: closed-set results: {'recalls': array([0.759, 0.993, 0.996, 0.905, 0.918, 1.   , 1.   , 0.951, 0.913,
+       0.654, 0.552]), 'recall': 0.8764545454545455, 'f1': 0.8763736916621719, 'acc': 0.8764545454545455}
+2025-05-25 13:58:44 INFO: closed-set confusion matrix: [[ 759    2    0  151   64    0    0    0    0   13   11]
+ [   0  993    0    0    0    0    0    1    3    1    2]
+ [   0    0  996    0    0    0    0    1    0    2    1]
+ [  76    3    0  905    8    0    0    0    0    5    3]
+ [  69    0    0   12  918    0    0    0    0    0    1]
+ [   0    0    0    0    0 1000    0    0    0    0    0]
+ [   0    0    0    0    0    0 1000    0    0    0    0]
+ [   0    0    0    0    0    0    0  951   29    9   11]
+ [   0    0    0    0    0    0    0   86  913    1    0]
+ [   0    0    0    0    0    0    0   15    0  654  331]
+ [   0    0    0    0    0    0    0   13    2  433  552]]
+2025-05-25 14:00:24 INFO: unknown_celeba/SNGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.729763925075531	 AUROC (%): 57.44
+2025-05-25 14:00:24 INFO: unknown_celeba/AttGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.7011003494262695	 AUROC (%): 61.41
+2025-05-25 14:00:24 INFO: unknown_celeba/starGAN	 	 mostly pred class: celeba_MMDGAN	 	 average score: 0.6872795820236206	 AUROC (%): 63.21
+2025-05-25 14:00:24 INFO: unknown_Faces_HQ/styleGAN2	 	 mostly pred class: real	 	 average score: 0.5140658020973206	 AUROC (%): 84.21
+2025-05-25 14:00:24 INFO: unknown_Faces_HQ/styleGAN3_r	 	 mostly pred class: real	 	 average score: 0.5041531324386597	 AUROC (%): 84.78
+2025-05-25 14:00:24 INFO: unknown_Faces_HQ/styleGAN3_t	 	 mostly pred class: real	 	 average score: 0.5083965063095093	 AUROC (%): 84.42
+2025-05-25 14:00:24 INFO: unknown_celeba/DisBetaVAE	 	 mostly pred class: celeba_VanillaVAE	 	 average score: 0.6899695992469788	 AUROC (%): 62.86
+2025-05-25 14:00:24 INFO: unknown_celeba/InfoVAE	 	 mostly pred class: celeba_BetaVAE	 	 average score: 0.5042096972465515	 AUROC (%): 85.91
+2025-05-25 14:00:24 INFO: unknown_celeba/glow	 	 mostly pred class: real	 	 average score: 0.5358714461326599	 AUROC (%): 81.79
+2025-05-25 14:00:24 INFO: unknown_celeba/ResFlow	 	 mostly pred class: real	 	 average score: 0.49859312176704407	 AUROC (%): 85.75
+2025-05-25 14:00:24 INFO: unknown_lsun_bedroom/LDM	 	 mostly pred class: lsun_bedroom_ADM	 	 average score: 0.6368856430053711	 AUROC (%): 69.17
+2025-05-25 14:00:24 INFO: unknown_lsun_bedroom/PNDM	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.558608889579773	 AUROC (%): 78.38
+2025-05-25 14:00:24 INFO: unknown_celeba/Styleformer	 	 mostly pred class: lsun_bedroom_DDPM	 	 average score: 0.43952271342277527	 AUROC (%): 88.84
+2025-05-25 14:00:24 INFO: unknown_celeba/TransGAN	 	 mostly pred class: celeba_ProGAN	 	 average score: 0.6016510128974915	 AUROC (%): 74.37
+2025-05-25 14:00:24 INFO: unknown_ffhq/gansformer	 	 mostly pred class: real	 	 average score: 0.5013149976730347	 AUROC (%): 85.34
+2025-05-25 14:00:24 INFO: unknown_ffhq/StyleSwin	 	 mostly pred class: real	 	 average score: 0.49394145607948303	 AUROC (%): 85.75
+2025-05-25 14:00:24 INFO: unknown_stable_diffusion_xl	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.520605206489563	 AUROC (%): 83.09
+2025-05-25 14:00:24 INFO: unknown_midjourney_kaggle	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.5513848662376404	 AUROC (%): 79.48
+2025-05-25 14:00:24 INFO: unknown_T2I/glide	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.4479718506336212	 AUROC (%): 89.48
+2025-05-25 14:00:24 INFO: unknown_T2I/dalle-mini	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.5522909760475159	 AUROC (%): 79.40
+2025-05-25 14:00:24 INFO: unknown_T2I/dalle_2	 	 mostly pred class: stable_diffusion_v21	 	 average score: 0.5527019500732422	 AUROC (%): 79.55
+2025-05-25 14:00:24 INFO: unknown_T2I/dalle_3	 	 mostly pred class: stable_diffusion_v15	 	 average score: 0.5116444826126099	 AUROC (%): 83.52
+2025-05-25 14:00:24 INFO: AUC: 78.55, OSCR: 72.95
+2025-05-25 14:00:24 INFO: ----------------------------  testing end ----------------------------  

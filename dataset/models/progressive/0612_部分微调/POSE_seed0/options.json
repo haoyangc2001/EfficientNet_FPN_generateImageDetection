@@ -1,0 +1,8 @@
+{
+    "config_name": "progressive",
+    "data": "homework",
+    "mode": "POSE",
+    "device": "cuda:0",
+    "log_name": null,
+    "debug": false
+}
